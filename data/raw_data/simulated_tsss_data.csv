@@ -1,0 +1,1001 @@
+service_date,overnight_service_type,capacity_type,funding_capacity,actual_capacity,occupancy,location
+2019-09-22,Shelter,Bed-based,98,84,82,North York
+2022-09-23,Crisis Services,Bed-based,91,90,79,Etobicoke
+2020-06-14,Hotel Program,Room-based,35,34,34,Downtown
+2023-04-18,Family Program,Room-based,23,23,22,Scarborough
+2023-08-22,Hotel Program,Room-based,17,17,16,Downtown
+2018-04-10,Family Program,Room-based,31,28,25,North York
+2021-03-02,Shelter,Bed-based,111,97,74,Etobicoke
+2023-05-09,Crisis Services,Bed-based,63,55,48,Scarborough
+2021-04-22,Hotel Program,Room-based,40,35,34,Scarborough
+2020-09-26,Family Program,Room-based,19,17,13,North York
+2023-09-27,Shelter,Bed-based,154,150,117,Scarborough
+2020-09-19,Crisis Services,Bed-based,142,139,126,Downtown
+2022-01-23,Hotel Program,Room-based,14,12,10,North York
+2021-06-08,Family Program,Room-based,10,10,10,Scarborough
+2018-08-14,Hotel Program,Room-based,21,21,20,Scarborough
+2023-05-25,Shelter,Bed-based,199,178,168,Etobicoke
+2019-06-23,Family Program,Room-based,15,14,12,Scarborough
+2018-04-03,Family Program,Room-based,24,23,23,Scarborough
+2019-12-20,Crisis Services,Bed-based,176,151,130,Scarborough
+2023-09-22,Crisis Services,Bed-based,189,173,172,Downtown
+2023-05-03,Family Program,Room-based,42,40,35,Downtown
+2022-02-26,Shelter,Bed-based,131,127,119,Downtown
+2021-11-03,Crisis Services,Bed-based,161,150,137,Etobicoke
+2023-12-18,Family Program,Room-based,15,15,14,North York
+2021-12-06,Hotel Program,Room-based,49,42,38,North York
+2022-04-01,Hotel Program,Room-based,30,28,21,Etobicoke
+2021-04-06,Hotel Program,Room-based,34,31,24,Scarborough
+2021-07-25,Family Program,Room-based,50,48,47,Scarborough
+2019-09-26,Shelter,Bed-based,159,142,122,Scarborough
+2018-11-19,Shelter,Bed-based,95,89,81,Scarborough
+2023-10-11,Hotel Program,Room-based,17,15,14,North York
+2023-05-31,Hotel Program,Room-based,31,30,30,Etobicoke
+2022-02-21,Crisis Services,Bed-based,178,167,155,Etobicoke
+2022-10-09,Family Program,Room-based,46,41,33,Scarborough
+2018-02-23,Hotel Program,Room-based,17,16,14,Downtown
+2020-11-12,Hotel Program,Room-based,29,27,25,North York
+2022-07-20,Shelter,Bed-based,171,170,138,Etobicoke
+2019-04-19,Family Program,Room-based,50,44,39,North York
+2019-11-28,Shelter,Bed-based,179,152,117,Downtown
+2019-05-23,Family Program,Room-based,40,36,35,North York
+2018-11-09,Family Program,Room-based,25,24,19,Etobicoke
+2020-06-26,Family Program,Room-based,19,18,15,North York
+2020-06-25,Family Program,Room-based,45,39,34,Scarborough
+2020-03-18,Hotel Program,Room-based,42,36,31,North York
+2018-11-30,Hotel Program,Room-based,20,20,16,North York
+2018-10-31,Crisis Services,Bed-based,190,166,133,North York
+2019-05-26,Crisis Services,Bed-based,143,135,126,North York
+2020-10-17,Crisis Services,Bed-based,80,73,62,Etobicoke
+2019-08-06,Shelter,Bed-based,100,99,90,North York
+2023-02-22,Shelter,Bed-based,173,163,148,Etobicoke
+2018-04-11,Crisis Services,Bed-based,66,57,44,North York
+2020-08-26,Crisis Services,Bed-based,164,152,132,North York
+2022-10-16,Crisis Services,Bed-based,122,116,105,Scarborough
+2018-09-24,Family Program,Room-based,44,41,34,North York
+2021-05-13,Hotel Program,Room-based,41,39,36,Downtown
+2019-03-29,Shelter,Bed-based,135,124,121,Etobicoke
+2018-10-07,Hotel Program,Room-based,27,26,22,Downtown
+2022-07-08,Hotel Program,Room-based,26,23,20,Downtown
+2023-05-15,Crisis Services,Bed-based,153,139,121,Scarborough
+2020-03-31,Hotel Program,Room-based,29,28,21,Etobicoke
+2021-12-27,Crisis Services,Bed-based,178,175,146,Downtown
+2018-07-27,Shelter,Bed-based,195,182,145,Downtown
+2020-04-20,Family Program,Room-based,45,40,34,Scarborough
+2019-08-24,Family Program,Room-based,15,14,12,Etobicoke
+2022-11-20,Hotel Program,Room-based,14,13,10,Downtown
+2020-09-09,Hotel Program,Room-based,43,38,29,North York
+2022-11-10,Hotel Program,Room-based,29,27,25,Downtown
+2022-11-15,Shelter,Bed-based,124,106,91,Etobicoke
+2022-10-06,Family Program,Room-based,31,27,21,Etobicoke
+2020-08-21,Shelter,Bed-based,76,67,58,Downtown
+2022-07-11,Hotel Program,Room-based,11,10,8,Scarborough
+2021-10-09,Family Program,Room-based,46,42,32,Etobicoke
+2022-04-05,Crisis Services,Bed-based,82,80,64,North York
+2018-01-02,Shelter,Bed-based,172,155,137,Etobicoke
+2020-11-06,Shelter,Bed-based,155,154,123,Downtown
+2019-04-28,Hotel Program,Room-based,13,12,11,Etobicoke
+2020-04-11,Crisis Services,Bed-based,136,133,112,Etobicoke
+2021-09-03,Family Program,Room-based,14,13,12,Scarborough
+2020-02-10,Shelter,Bed-based,93,84,70,Downtown
+2018-09-01,Hotel Program,Room-based,33,29,26,Etobicoke
+2019-06-18,Crisis Services,Bed-based,89,84,68,North York
+2022-01-03,Shelter,Bed-based,128,112,93,Downtown
+2020-07-03,Shelter,Bed-based,63,59,50,Etobicoke
+2022-09-23,Family Program,Room-based,38,33,30,Etobicoke
+2018-08-14,Crisis Services,Bed-based,97,84,64,Scarborough
+2020-08-10,Family Program,Room-based,40,36,33,Scarborough
+2023-11-28,Family Program,Room-based,44,41,36,Scarborough
+2023-05-10,Family Program,Room-based,47,45,38,North York
+2023-04-26,Family Program,Room-based,10,9,8,Etobicoke
+2019-01-19,Hotel Program,Room-based,15,14,11,Etobicoke
+2018-10-14,Family Program,Room-based,35,31,24,Etobicoke
+2021-12-01,Hotel Program,Room-based,13,11,9,Etobicoke
+2020-01-23,Family Program,Room-based,27,26,20,Etobicoke
+2021-12-09,Hotel Program,Room-based,31,29,23,Etobicoke
+2019-12-03,Family Program,Room-based,39,35,35,North York
+2019-02-16,Hotel Program,Room-based,15,15,12,North York
+2022-09-10,Hotel Program,Room-based,13,12,11,Scarborough
+2018-07-24,Family Program,Room-based,21,18,17,Etobicoke
+2020-10-19,Crisis Services,Bed-based,77,67,59,Scarborough
+2021-01-25,Hotel Program,Room-based,19,19,16,North York
+2021-08-06,Shelter,Bed-based,93,86,74,Etobicoke
+2019-12-30,Family Program,Room-based,16,15,13,Scarborough
+2020-12-06,Shelter,Bed-based,80,76,70,Etobicoke
+2023-09-22,Family Program,Room-based,48,46,46,Downtown
+2020-11-23,Hotel Program,Room-based,32,31,27,Downtown
+2023-05-04,Crisis Services,Bed-based,95,93,81,North York
+2023-06-26,Shelter,Bed-based,100,87,72,Downtown
+2021-08-26,Shelter,Bed-based,109,97,77,Etobicoke
+2020-06-18,Family Program,Room-based,50,49,41,Downtown
+2018-11-19,Shelter,Bed-based,166,150,123,Downtown
+2023-08-11,Hotel Program,Room-based,11,11,9,Scarborough
+2019-10-22,Family Program,Room-based,39,35,30,Downtown
+2018-05-13,Crisis Services,Bed-based,71,67,57,Scarborough
+2023-09-07,Crisis Services,Bed-based,61,57,49,North York
+2022-04-28,Crisis Services,Bed-based,164,153,123,Etobicoke
+2018-11-08,Family Program,Room-based,50,46,35,Etobicoke
+2021-04-17,Crisis Services,Bed-based,197,183,177,Downtown
+2023-09-21,Hotel Program,Room-based,44,40,36,Etobicoke
+2021-07-06,Hotel Program,Room-based,50,47,42,Downtown
+2020-06-04,Hotel Program,Room-based,10,9,8,Scarborough
+2021-11-19,Family Program,Room-based,18,17,14,North York
+2019-12-02,Crisis Services,Bed-based,68,65,57,Etobicoke
+2019-11-05,Family Program,Room-based,15,14,13,Downtown
+2019-04-27,Family Program,Room-based,15,13,10,Downtown
+2020-03-20,Hotel Program,Room-based,20,19,17,Downtown
+2023-11-26,Crisis Services,Bed-based,105,103,96,Downtown
+2018-12-04,Shelter,Bed-based,182,165,142,North York
+2018-07-19,Family Program,Room-based,20,18,17,Downtown
+2018-11-07,Family Program,Room-based,21,21,19,North York
+2022-02-20,Family Program,Room-based,34,31,28,Etobicoke
+2021-09-18,Family Program,Room-based,36,33,26,North York
+2023-05-07,Family Program,Room-based,25,23,22,North York
+2022-01-13,Family Program,Room-based,30,26,22,Downtown
+2022-06-03,Crisis Services,Bed-based,59,54,42,Scarborough
+2021-02-15,Crisis Services,Bed-based,59,54,43,Etobicoke
+2021-12-16,Shelter,Bed-based,87,81,77,North York
+2022-12-05,Shelter,Bed-based,100,95,74,Downtown
+2022-09-18,Crisis Services,Bed-based,103,98,85,North York
+2023-11-16,Shelter,Bed-based,134,132,111,Scarborough
+2020-08-20,Shelter,Bed-based,115,109,95,North York
+2019-11-14,Shelter,Bed-based,196,182,162,North York
+2020-06-15,Hotel Program,Room-based,44,39,39,North York
+2018-01-23,Shelter,Bed-based,165,141,112,Downtown
+2019-02-07,Hotel Program,Room-based,46,40,34,Downtown
+2023-01-20,Hotel Program,Room-based,43,40,34,North York
+2019-05-22,Crisis Services,Bed-based,87,81,78,Scarborough
+2019-06-08,Crisis Services,Bed-based,113,98,74,North York
+2018-06-17,Crisis Services,Bed-based,75,67,51,North York
+2019-06-23,Crisis Services,Bed-based,86,75,62,Etobicoke
+2022-05-23,Crisis Services,Bed-based,81,72,60,Scarborough
+2023-01-30,Family Program,Room-based,10,9,9,Downtown
+2020-12-25,Crisis Services,Bed-based,94,86,77,Etobicoke
+2020-04-29,Family Program,Room-based,35,31,24,North York
+2019-06-24,Shelter,Bed-based,146,126,96,Scarborough
+2018-09-01,Hotel Program,Room-based,21,21,16,Scarborough
+2020-05-04,Hotel Program,Room-based,20,18,17,Etobicoke
+2021-06-06,Shelter,Bed-based,117,103,88,North York
+2019-04-20,Crisis Services,Bed-based,89,80,79,North York
+2020-09-01,Family Program,Room-based,21,19,18,Downtown
+2019-04-23,Family Program,Room-based,37,36,29,Scarborough
+2021-01-05,Crisis Services,Bed-based,103,96,93,Etobicoke
+2020-02-15,Hotel Program,Room-based,20,17,16,Downtown
+2021-11-24,Shelter,Bed-based,170,165,165,Scarborough
+2020-03-31,Crisis Services,Bed-based,95,94,73,Downtown
+2020-02-18,Family Program,Room-based,32,28,27,Scarborough
+2021-03-14,Hotel Program,Room-based,14,13,13,Downtown
+2022-06-10,Shelter,Bed-based,60,53,50,Etobicoke
+2019-04-30,Family Program,Room-based,30,29,27,Etobicoke
+2020-06-22,Crisis Services,Bed-based,188,168,167,Downtown
+2019-08-05,Hotel Program,Room-based,27,26,22,North York
+2021-10-11,Crisis Services,Bed-based,200,174,147,Scarborough
+2019-02-07,Hotel Program,Room-based,31,30,24,Downtown
+2023-03-07,Crisis Services,Bed-based,103,100,85,Scarborough
+2022-06-23,Crisis Services,Bed-based,181,177,151,Scarborough
+2022-01-03,Crisis Services,Bed-based,119,101,91,Downtown
+2021-09-15,Hotel Program,Room-based,14,12,10,Scarborough
+2020-03-26,Hotel Program,Room-based,27,24,18,Downtown
+2021-03-06,Hotel Program,Room-based,39,35,32,Scarborough
+2023-03-31,Shelter,Bed-based,169,146,111,North York
+2021-06-28,Shelter,Bed-based,97,93,73,Etobicoke
+2023-01-14,Family Program,Room-based,12,10,10,Etobicoke
+2019-11-16,Shelter,Bed-based,56,55,48,Scarborough
+2022-04-01,Shelter,Bed-based,131,121,99,Scarborough
+2019-08-04,Family Program,Room-based,22,21,16,Etobicoke
+2021-07-25,Shelter,Bed-based,121,120,100,North York
+2020-11-20,Crisis Services,Bed-based,109,102,99,North York
+2019-08-04,Crisis Services,Bed-based,65,65,51,Scarborough
+2021-05-21,Hotel Program,Room-based,40,36,30,Scarborough
+2023-06-23,Family Program,Room-based,26,23,20,Downtown
+2023-05-30,Family Program,Room-based,13,13,11,Etobicoke
+2019-08-24,Hotel Program,Room-based,32,28,26,Scarborough
+2019-12-06,Hotel Program,Room-based,25,24,23,North York
+2023-11-29,Shelter,Bed-based,72,64,55,Scarborough
+2021-09-19,Crisis Services,Bed-based,116,111,89,Downtown
+2023-08-15,Family Program,Room-based,20,19,17,North York
+2020-10-18,Family Program,Room-based,14,12,10,Etobicoke
+2020-06-09,Shelter,Bed-based,60,51,49,North York
+2021-12-14,Crisis Services,Bed-based,189,173,141,Downtown
+2018-11-30,Family Program,Room-based,44,41,36,North York
+2021-06-08,Shelter,Bed-based,120,110,85,Scarborough
+2019-06-07,Shelter,Bed-based,128,115,95,North York
+2023-10-09,Crisis Services,Bed-based,148,137,132,North York
+2021-08-09,Hotel Program,Room-based,16,14,12,North York
+2021-02-01,Shelter,Bed-based,62,55,47,Scarborough
+2020-05-31,Shelter,Bed-based,133,113,90,North York
+2023-04-12,Shelter,Bed-based,189,176,143,Etobicoke
+2020-03-08,Crisis Services,Bed-based,152,139,123,Etobicoke
+2019-09-24,Shelter,Bed-based,122,122,114,Scarborough
+2019-01-09,Shelter,Bed-based,83,71,57,North York
+2019-01-13,Shelter,Bed-based,162,153,122,North York
+2020-11-21,Family Program,Room-based,45,42,41,North York
+2019-07-08,Family Program,Room-based,35,30,24,Downtown
+2019-04-19,Crisis Services,Bed-based,123,108,81,Scarborough
+2022-01-16,Shelter,Bed-based,65,61,50,Scarborough
+2018-04-15,Crisis Services,Bed-based,147,136,124,Scarborough
+2022-03-15,Shelter,Bed-based,123,121,106,Downtown
+2020-02-10,Family Program,Room-based,22,21,17,Scarborough
+2020-06-14,Crisis Services,Bed-based,185,172,137,Scarborough
+2022-12-03,Crisis Services,Bed-based,82,73,73,Scarborough
+2023-07-06,Crisis Services,Bed-based,146,133,124,Downtown
+2019-09-11,Hotel Program,Room-based,24,21,18,North York
+2023-10-06,Hotel Program,Room-based,40,36,28,Downtown
+2022-05-15,Crisis Services,Bed-based,169,151,139,Etobicoke
+2022-02-12,Crisis Services,Bed-based,65,64,58,Scarborough
+2018-04-26,Family Program,Room-based,46,41,37,North York
+2020-05-15,Family Program,Room-based,16,15,14,Etobicoke
+2020-11-12,Hotel Program,Room-based,40,34,31,Etobicoke
+2021-05-11,Crisis Services,Bed-based,200,181,140,Downtown
+2022-03-10,Family Program,Room-based,46,41,38,Etobicoke
+2023-06-29,Crisis Services,Bed-based,120,118,89,Scarborough
+2021-09-16,Crisis Services,Bed-based,195,178,177,North York
+2020-07-27,Family Program,Room-based,18,16,16,Scarborough
+2021-04-02,Shelter,Bed-based,171,156,149,North York
+2018-05-09,Hotel Program,Room-based,10,9,7,Etobicoke
+2019-07-26,Crisis Services,Bed-based,162,153,137,Scarborough
+2020-05-19,Hotel Program,Room-based,36,35,29,North York
+2019-03-10,Hotel Program,Room-based,37,36,36,Scarborough
+2022-12-27,Hotel Program,Room-based,47,44,42,Downtown
+2018-12-01,Crisis Services,Bed-based,138,130,121,Etobicoke
+2022-10-26,Shelter,Bed-based,138,131,124,Scarborough
+2021-04-12,Shelter,Bed-based,66,65,61,Etobicoke
+2021-12-21,Hotel Program,Room-based,14,14,12,Scarborough
+2019-01-12,Hotel Program,Room-based,33,29,28,North York
+2021-10-18,Crisis Services,Bed-based,74,66,50,North York
+2019-11-14,Shelter,Bed-based,109,108,96,Scarborough
+2022-05-06,Crisis Services,Bed-based,171,155,129,Downtown
+2020-05-23,Family Program,Room-based,17,16,15,Scarborough
+2023-10-24,Shelter,Bed-based,64,62,56,Downtown
+2023-10-20,Family Program,Room-based,23,20,17,North York
+2022-05-11,Family Program,Room-based,24,23,22,Scarborough
+2019-07-18,Hotel Program,Room-based,24,23,20,Etobicoke
+2019-05-01,Family Program,Room-based,12,10,10,Downtown
+2021-07-22,Family Program,Room-based,27,23,20,Downtown
+2019-08-09,Crisis Services,Bed-based,179,164,150,North York
+2021-03-09,Family Program,Room-based,22,21,17,Etobicoke
+2022-09-16,Shelter,Bed-based,150,135,111,Etobicoke
+2019-01-04,Family Program,Room-based,47,42,42,North York
+2020-06-04,Shelter,Bed-based,124,122,122,Scarborough
+2020-10-29,Family Program,Room-based,25,23,19,Scarborough
+2023-03-17,Shelter,Bed-based,64,60,54,Scarborough
+2023-07-21,Shelter,Bed-based,136,121,102,Scarborough
+2023-04-16,Hotel Program,Room-based,41,36,36,Scarborough
+2022-01-16,Hotel Program,Room-based,38,33,32,North York
+2023-09-12,Shelter,Bed-based,74,69,61,Scarborough
+2021-02-05,Shelter,Bed-based,187,186,162,Downtown
+2021-06-16,Shelter,Bed-based,77,70,59,Downtown
+2020-01-07,Family Program,Room-based,13,13,13,North York
+2020-01-31,Shelter,Bed-based,61,53,52,North York
+2018-02-13,Shelter,Bed-based,196,189,155,Scarborough
+2021-01-06,Hotel Program,Room-based,23,20,19,Etobicoke
+2023-03-23,Shelter,Bed-based,104,97,85,Scarborough
+2018-01-14,Shelter,Bed-based,141,121,110,Downtown
+2018-06-07,Family Program,Room-based,28,27,23,Scarborough
+2018-12-26,Hotel Program,Room-based,26,26,20,Downtown
+2022-08-15,Crisis Services,Bed-based,179,172,136,Scarborough
+2022-05-30,Crisis Services,Bed-based,126,109,83,Scarborough
+2023-10-30,Family Program,Room-based,49,49,41,North York
+2020-10-18,Hotel Program,Room-based,44,39,36,North York
+2018-06-12,Crisis Services,Bed-based,80,78,63,Downtown
+2021-11-21,Family Program,Room-based,27,26,22,North York
+2022-07-20,Shelter,Bed-based,82,75,71,North York
+2018-10-28,Crisis Services,Bed-based,121,117,111,Scarborough
+2020-05-18,Hotel Program,Room-based,11,10,8,Scarborough
+2019-05-08,Crisis Services,Bed-based,105,99,93,Etobicoke
+2018-05-07,Hotel Program,Room-based,25,22,19,Etobicoke
+2020-05-17,Hotel Program,Room-based,39,37,30,North York
+2018-05-23,Hotel Program,Room-based,30,27,22,Etobicoke
+2019-05-10,Hotel Program,Room-based,18,18,14,Scarborough
+2018-04-30,Crisis Services,Bed-based,59,54,48,Downtown
+2022-01-07,Shelter,Bed-based,64,59,59,North York
+2019-10-15,Family Program,Room-based,50,49,37,North York
+2018-08-09,Hotel Program,Room-based,44,42,39,Etobicoke
+2018-06-07,Family Program,Room-based,45,38,29,Scarborough
+2023-04-13,Hotel Program,Room-based,10,9,9,Downtown
+2022-07-10,Shelter,Bed-based,179,159,158,Etobicoke
+2022-11-24,Family Program,Room-based,19,19,18,Scarborough
+2023-11-21,Hotel Program,Room-based,48,44,42,Scarborough
+2018-08-15,Crisis Services,Bed-based,124,118,102,Downtown
+2018-08-05,Family Program,Room-based,35,30,28,Downtown
+2022-10-16,Hotel Program,Room-based,25,22,20,Downtown
+2022-09-15,Family Program,Room-based,39,39,29,Downtown
+2018-01-21,Family Program,Room-based,30,28,25,Etobicoke
+2022-09-03,Hotel Program,Room-based,45,41,38,North York
+2022-05-17,Crisis Services,Bed-based,54,51,39,Scarborough
+2021-10-11,Hotel Program,Room-based,32,28,26,Etobicoke
+2020-11-19,Crisis Services,Bed-based,55,51,49,Scarborough
+2018-12-10,Crisis Services,Bed-based,163,143,124,Downtown
+2018-01-18,Hotel Program,Room-based,30,27,22,Downtown
+2020-09-17,Family Program,Room-based,34,33,31,Downtown
+2020-12-14,Shelter,Bed-based,147,140,120,Scarborough
+2020-05-03,Crisis Services,Bed-based,191,190,184,Scarborough
+2020-10-14,Shelter,Bed-based,179,156,142,Etobicoke
+2022-04-12,Shelter,Bed-based,129,118,102,Etobicoke
+2018-05-02,Crisis Services,Bed-based,192,177,156,North York
+2020-02-16,Family Program,Room-based,23,21,21,Etobicoke
+2022-10-25,Shelter,Bed-based,172,158,145,Scarborough
+2023-01-05,Hotel Program,Room-based,35,31,30,Etobicoke
+2019-06-05,Family Program,Room-based,47,45,38,Scarborough
+2020-02-15,Shelter,Bed-based,83,82,80,Etobicoke
+2023-02-20,Hotel Program,Room-based,38,34,26,North York
+2023-02-13,Hotel Program,Room-based,32,31,26,North York
+2019-10-11,Family Program,Room-based,16,16,15,Etobicoke
+2018-11-19,Hotel Program,Room-based,13,11,9,Etobicoke
+2022-03-22,Crisis Services,Bed-based,186,172,138,Scarborough
+2018-08-16,Hotel Program,Room-based,27,24,19,Scarborough
+2018-03-15,Family Program,Room-based,35,32,29,Scarborough
+2023-12-29,Hotel Program,Room-based,26,24,22,Downtown
+2018-03-18,Crisis Services,Bed-based,160,156,133,North York
+2020-01-12,Crisis Services,Bed-based,93,81,73,Downtown
+2023-06-27,Crisis Services,Bed-based,166,163,139,Etobicoke
+2021-09-13,Shelter,Bed-based,107,97,86,Downtown
+2019-09-19,Family Program,Room-based,42,40,38,Etobicoke
+2022-06-04,Shelter,Bed-based,111,96,78,North York
+2023-01-01,Family Program,Room-based,43,42,39,Downtown
+2019-11-20,Family Program,Room-based,30,28,24,Scarborough
+2020-12-14,Hotel Program,Room-based,20,19,17,North York
+2022-03-08,Crisis Services,Bed-based,139,131,130,Scarborough
+2021-11-05,Family Program,Room-based,17,17,15,Scarborough
+2021-11-11,Family Program,Room-based,38,37,29,Downtown
+2023-11-12,Hotel Program,Room-based,43,43,42,Etobicoke
+2020-06-27,Crisis Services,Bed-based,106,101,84,Etobicoke
+2018-09-19,Family Program,Room-based,13,12,12,Scarborough
+2021-02-26,Shelter,Bed-based,156,155,119,North York
+2019-05-08,Hotel Program,Room-based,45,43,33,North York
+2020-12-01,Hotel Program,Room-based,26,23,18,Downtown
+2020-03-21,Shelter,Bed-based,52,47,45,Etobicoke
+2023-11-24,Shelter,Bed-based,113,96,81,Etobicoke
+2020-04-30,Family Program,Room-based,23,21,20,Etobicoke
+2019-05-18,Family Program,Room-based,14,13,11,North York
+2021-09-27,Family Program,Room-based,22,19,16,North York
+2018-10-27,Crisis Services,Bed-based,88,85,69,North York
+2023-10-20,Hotel Program,Room-based,37,32,28,North York
+2021-02-02,Family Program,Room-based,47,42,34,Downtown
+2018-12-24,Family Program,Room-based,29,26,25,Etobicoke
+2021-09-23,Hotel Program,Room-based,50,49,42,Downtown
+2023-11-30,Family Program,Room-based,29,27,25,North York
+2022-01-04,Shelter,Bed-based,164,161,156,Downtown
+2020-07-06,Family Program,Room-based,41,37,36,Downtown
+2019-12-10,Family Program,Room-based,30,29,24,North York
+2023-01-04,Family Program,Room-based,41,36,32,Etobicoke
+2018-11-11,Hotel Program,Room-based,48,45,35,Etobicoke
+2019-02-27,Hotel Program,Room-based,45,44,34,Downtown
+2023-05-18,Shelter,Bed-based,179,160,126,North York
+2019-11-06,Shelter,Bed-based,95,85,68,Etobicoke
+2020-03-06,Family Program,Room-based,44,40,30,Downtown
+2022-09-13,Hotel Program,Room-based,44,43,35,Etobicoke
+2019-02-28,Crisis Services,Bed-based,86,82,62,Etobicoke
+2018-02-08,Crisis Services,Bed-based,148,136,104,North York
+2020-06-09,Family Program,Room-based,13,13,10,Scarborough
+2020-11-24,Family Program,Room-based,43,38,30,Scarborough
+2020-07-12,Crisis Services,Bed-based,167,152,120,Scarborough
+2020-01-21,Shelter,Bed-based,179,155,139,Downtown
+2023-03-13,Hotel Program,Room-based,44,39,30,Etobicoke
+2020-09-23,Family Program,Room-based,38,36,33,Etobicoke
+2021-03-14,Shelter,Bed-based,188,188,187,Etobicoke
+2023-10-12,Family Program,Room-based,19,19,18,Etobicoke
+2022-08-24,Hotel Program,Room-based,27,26,26,Scarborough
+2019-04-03,Hotel Program,Room-based,11,10,10,Etobicoke
+2019-11-08,Family Program,Room-based,43,38,38,Scarborough
+2023-10-29,Shelter,Bed-based,54,54,44,Scarborough
+2021-07-04,Shelter,Bed-based,150,146,138,Scarborough
+2022-07-25,Crisis Services,Bed-based,59,59,55,North York
+2020-03-27,Family Program,Room-based,27,25,21,Etobicoke
+2022-08-12,Crisis Services,Bed-based,148,142,131,North York
+2021-03-23,Crisis Services,Bed-based,158,153,120,Etobicoke
+2023-06-25,Crisis Services,Bed-based,167,155,117,Downtown
+2019-02-10,Family Program,Room-based,22,20,16,Scarborough
+2019-09-11,Hotel Program,Room-based,23,22,20,Scarborough
+2018-07-27,Crisis Services,Bed-based,64,59,49,Etobicoke
+2019-04-06,Family Program,Room-based,22,20,17,North York
+2023-11-10,Family Program,Room-based,48,45,44,Downtown
+2019-10-11,Family Program,Room-based,45,42,37,Scarborough
+2022-05-09,Shelter,Bed-based,185,176,165,Downtown
+2022-09-17,Crisis Services,Bed-based,154,153,139,Etobicoke
+2018-08-19,Shelter,Bed-based,181,161,153,North York
+2019-06-09,Family Program,Room-based,43,38,34,Downtown
+2019-08-16,Shelter,Bed-based,64,57,49,Etobicoke
+2018-08-10,Shelter,Bed-based,130,119,104,Scarborough
+2018-09-16,Family Program,Room-based,18,16,12,North York
+2023-12-11,Hotel Program,Room-based,27,25,23,Etobicoke
+2023-11-30,Hotel Program,Room-based,40,37,34,Scarborough
+2018-10-28,Shelter,Bed-based,177,160,126,Scarborough
+2023-06-06,Hotel Program,Room-based,49,44,38,Scarborough
+2021-06-16,Crisis Services,Bed-based,75,67,55,Downtown
+2020-05-16,Family Program,Room-based,43,41,35,Scarborough
+2020-09-12,Shelter,Bed-based,94,82,78,Downtown
+2022-03-28,Shelter,Bed-based,193,168,167,Scarborough
+2018-06-30,Shelter,Bed-based,187,161,141,Scarborough
+2020-01-14,Crisis Services,Bed-based,54,47,45,Downtown
+2022-01-30,Shelter,Bed-based,55,52,52,Etobicoke
+2019-11-26,Crisis Services,Bed-based,198,197,168,Etobicoke
+2022-12-27,Shelter,Bed-based,130,126,122,Downtown
+2019-04-17,Shelter,Bed-based,75,71,54,Scarborough
+2020-12-26,Hotel Program,Room-based,49,47,43,Downtown
+2019-08-28,Hotel Program,Room-based,25,23,19,Scarborough
+2019-02-25,Hotel Program,Room-based,11,10,8,Downtown
+2023-09-13,Crisis Services,Bed-based,125,114,109,Downtown
+2019-12-06,Family Program,Room-based,29,25,22,Scarborough
+2020-11-13,Hotel Program,Room-based,10,10,9,Etobicoke
+2018-03-03,Crisis Services,Bed-based,114,112,94,Scarborough
+2021-04-13,Hotel Program,Room-based,18,16,14,North York
+2021-11-11,Hotel Program,Room-based,47,45,44,Downtown
+2021-07-29,Shelter,Bed-based,101,95,91,Etobicoke
+2019-12-07,Hotel Program,Room-based,49,48,48,North York
+2023-05-06,Crisis Services,Bed-based,64,58,50,Scarborough
+2021-10-03,Family Program,Room-based,34,31,30,Downtown
+2019-10-26,Crisis Services,Bed-based,135,121,102,Etobicoke
+2020-04-30,Shelter,Bed-based,170,147,113,Downtown
+2018-12-18,Family Program,Room-based,41,39,33,Scarborough
+2023-03-04,Family Program,Room-based,28,28,24,Scarborough
+2023-09-19,Family Program,Room-based,49,46,43,North York
+2021-05-19,Shelter,Bed-based,122,106,86,Etobicoke
+2019-12-23,Crisis Services,Bed-based,52,51,43,North York
+2023-12-23,Family Program,Room-based,16,15,13,Scarborough
+2019-05-30,Hotel Program,Room-based,37,32,30,Scarborough
+2021-09-03,Crisis Services,Bed-based,110,108,95,North York
+2018-08-25,Shelter,Bed-based,109,100,78,Scarborough
+2020-12-02,Family Program,Room-based,27,25,22,Etobicoke
+2018-08-06,Hotel Program,Room-based,34,31,24,Downtown
+2018-12-19,Hotel Program,Room-based,27,24,23,Downtown
+2019-09-12,Family Program,Room-based,42,37,33,Scarborough
+2021-07-02,Family Program,Room-based,39,38,37,North York
+2022-05-22,Family Program,Room-based,13,13,12,Scarborough
+2018-12-29,Shelter,Bed-based,173,152,138,North York
+2023-03-13,Shelter,Bed-based,147,135,113,Scarborough
+2022-04-01,Crisis Services,Bed-based,145,129,122,North York
+2022-07-24,Family Program,Room-based,30,26,21,Downtown
+2018-11-19,Family Program,Room-based,45,43,35,Etobicoke
+2020-02-24,Shelter,Bed-based,88,78,59,Downtown
+2022-01-14,Family Program,Room-based,16,15,13,Etobicoke
+2021-02-21,Crisis Services,Bed-based,54,47,43,Scarborough
+2020-02-06,Crisis Services,Bed-based,75,69,66,Etobicoke
+2019-06-11,Hotel Program,Room-based,49,48,38,Downtown
+2018-05-08,Family Program,Room-based,22,19,19,Etobicoke
+2019-06-03,Crisis Services,Bed-based,119,119,109,North York
+2023-05-04,Family Program,Room-based,41,40,38,Downtown
+2022-11-13,Shelter,Bed-based,168,149,146,North York
+2022-06-26,Shelter,Bed-based,53,51,46,Scarborough
+2018-12-06,Shelter,Bed-based,71,65,54,Etobicoke
+2018-10-01,Shelter,Bed-based,128,109,103,Scarborough
+2023-11-05,Hotel Program,Room-based,36,34,32,Etobicoke
+2020-08-13,Hotel Program,Room-based,21,19,18,North York
+2020-10-13,Family Program,Room-based,10,10,9,North York
+2018-12-29,Family Program,Room-based,34,31,30,North York
+2021-07-05,Hotel Program,Room-based,26,22,20,Downtown
+2019-08-17,Shelter,Bed-based,123,105,89,Etobicoke
+2019-05-19,Crisis Services,Bed-based,150,134,105,Downtown
+2022-02-22,Crisis Services,Bed-based,151,131,116,Scarborough
+2019-09-12,Crisis Services,Bed-based,141,122,112,Scarborough
+2022-11-10,Shelter,Bed-based,114,105,80,Downtown
+2018-07-25,Family Program,Room-based,40,36,35,Scarborough
+2022-12-06,Hotel Program,Room-based,24,21,17,Scarborough
+2020-07-25,Shelter,Bed-based,68,62,61,Downtown
+2022-07-14,Crisis Services,Bed-based,139,130,101,Etobicoke
+2021-12-21,Shelter,Bed-based,82,73,57,Scarborough
+2020-08-31,Hotel Program,Room-based,45,39,34,North York
+2021-10-05,Family Program,Room-based,41,41,38,Downtown
+2018-01-02,Shelter,Bed-based,110,96,81,North York
+2019-04-21,Crisis Services,Bed-based,108,102,84,Scarborough
+2022-03-24,Hotel Program,Room-based,19,19,18,North York
+2019-04-17,Crisis Services,Bed-based,62,62,57,Downtown
+2022-11-18,Crisis Services,Bed-based,122,115,108,Downtown
+2019-11-06,Crisis Services,Bed-based,66,64,55,Downtown
+2022-02-15,Shelter,Bed-based,162,140,112,Etobicoke
+2023-08-05,Hotel Program,Room-based,20,17,14,Etobicoke
+2018-09-11,Family Program,Room-based,15,13,11,Downtown
+2018-10-07,Hotel Program,Room-based,21,19,18,North York
+2022-01-25,Shelter,Bed-based,133,120,107,Etobicoke
+2020-07-28,Crisis Services,Bed-based,54,51,48,Etobicoke
+2023-01-02,Family Program,Room-based,12,11,10,Etobicoke
+2023-10-29,Family Program,Room-based,15,13,12,Etobicoke
+2018-06-04,Crisis Services,Bed-based,182,157,144,North York
+2020-10-03,Crisis Services,Bed-based,157,148,136,Etobicoke
+2022-03-17,Shelter,Bed-based,86,84,66,Etobicoke
+2018-07-10,Hotel Program,Room-based,40,39,36,Etobicoke
+2023-12-15,Shelter,Bed-based,160,151,123,North York
+2019-07-09,Shelter,Bed-based,80,76,69,Downtown
+2018-04-19,Shelter,Bed-based,167,161,149,Scarborough
+2022-02-12,Family Program,Room-based,16,15,13,Downtown
+2022-09-20,Crisis Services,Bed-based,186,164,154,Scarborough
+2020-02-14,Family Program,Room-based,29,26,25,North York
+2020-03-13,Hotel Program,Room-based,25,23,20,Downtown
+2019-09-21,Hotel Program,Room-based,33,29,27,Downtown
+2018-06-25,Hotel Program,Room-based,10,9,9,Etobicoke
+2020-03-11,Crisis Services,Bed-based,150,142,134,Etobicoke
+2019-01-25,Crisis Services,Bed-based,112,104,103,Scarborough
+2021-03-19,Crisis Services,Bed-based,145,141,136,Scarborough
+2021-01-08,Family Program,Room-based,15,14,11,Scarborough
+2023-09-01,Hotel Program,Room-based,25,23,21,Scarborough
+2020-01-18,Crisis Services,Bed-based,63,62,59,Etobicoke
+2020-10-14,Crisis Services,Bed-based,190,184,158,Downtown
+2018-06-30,Shelter,Bed-based,96,87,84,North York
+2023-02-27,Shelter,Bed-based,63,63,49,Downtown
+2020-05-16,Crisis Services,Bed-based,142,125,110,Etobicoke
+2022-05-31,Shelter,Bed-based,58,58,48,Scarborough
+2019-01-12,Shelter,Bed-based,127,117,104,Etobicoke
+2020-09-22,Family Program,Room-based,13,12,10,North York
+2022-08-14,Hotel Program,Room-based,36,35,35,Etobicoke
+2018-05-18,Crisis Services,Bed-based,139,133,112,Downtown
+2022-11-21,Hotel Program,Room-based,39,36,34,Etobicoke
+2019-10-22,Shelter,Bed-based,120,106,87,Downtown
+2020-03-09,Family Program,Room-based,29,27,24,Downtown
+2019-11-15,Shelter,Bed-based,113,109,93,North York
+2018-03-23,Crisis Services,Bed-based,94,87,81,North York
+2021-02-10,Family Program,Room-based,41,38,30,North York
+2022-01-27,Hotel Program,Room-based,19,18,15,North York
+2023-06-02,Hotel Program,Room-based,47,44,36,Downtown
+2018-02-25,Hotel Program,Room-based,23,21,20,Scarborough
+2023-12-07,Family Program,Room-based,10,9,8,Etobicoke
+2019-10-26,Shelter,Bed-based,197,183,172,Etobicoke
+2023-08-19,Shelter,Bed-based,165,162,145,Scarborough
+2022-02-14,Shelter,Bed-based,160,138,138,North York
+2020-09-06,Hotel Program,Room-based,38,35,29,Scarborough
+2022-11-24,Crisis Services,Bed-based,192,188,159,Downtown
+2018-03-28,Crisis Services,Bed-based,146,131,126,Etobicoke
+2022-06-07,Shelter,Bed-based,70,66,56,Downtown
+2020-02-03,Crisis Services,Bed-based,154,142,108,North York
+2022-12-22,Hotel Program,Room-based,41,40,30,North York
+2021-03-18,Hotel Program,Room-based,16,15,14,Scarborough
+2019-08-25,Hotel Program,Room-based,31,31,30,Scarborough
+2022-10-21,Crisis Services,Bed-based,82,81,80,Downtown
+2018-07-20,Family Program,Room-based,42,39,34,Downtown
+2022-12-28,Shelter,Bed-based,200,174,145,Etobicoke
+2019-08-30,Hotel Program,Room-based,10,9,7,Scarborough
+2022-07-08,Crisis Services,Bed-based,77,77,70,North York
+2023-10-13,Crisis Services,Bed-based,151,138,111,Downtown
+2018-06-28,Crisis Services,Bed-based,181,160,132,Downtown
+2023-02-15,Family Program,Room-based,50,45,39,Scarborough
+2022-10-23,Shelter,Bed-based,51,48,42,Scarborough
+2020-04-23,Family Program,Room-based,26,22,18,Downtown
+2019-12-19,Shelter,Bed-based,131,112,106,Scarborough
+2019-03-25,Family Program,Room-based,19,17,14,North York
+2021-05-31,Hotel Program,Room-based,23,20,16,North York
+2023-04-29,Crisis Services,Bed-based,60,51,39,Scarborough
+2021-03-06,Shelter,Bed-based,163,157,129,North York
+2021-07-09,Hotel Program,Room-based,18,17,14,Downtown
+2021-12-28,Hotel Program,Room-based,13,12,11,Etobicoke
+2021-03-06,Shelter,Bed-based,57,49,43,Etobicoke
+2021-01-21,Hotel Program,Room-based,45,43,39,Downtown
+2018-02-05,Crisis Services,Bed-based,185,178,141,Etobicoke
+2018-04-15,Shelter,Bed-based,122,110,104,Etobicoke
+2023-07-29,Hotel Program,Room-based,18,16,13,Etobicoke
+2022-08-12,Family Program,Room-based,25,21,20,Downtown
+2019-03-17,Hotel Program,Room-based,37,34,26,Scarborough
+2021-11-25,Family Program,Room-based,37,32,30,Scarborough
+2021-12-02,Family Program,Room-based,22,21,16,Etobicoke
+2020-05-15,Hotel Program,Room-based,16,15,12,Etobicoke
+2022-11-14,Hotel Program,Room-based,12,12,10,North York
+2021-04-12,Hotel Program,Room-based,32,31,28,Etobicoke
+2023-04-23,Shelter,Bed-based,180,165,151,Etobicoke
+2021-04-26,Family Program,Room-based,33,32,27,Scarborough
+2023-06-08,Shelter,Bed-based,148,134,118,Scarborough
+2021-07-10,Family Program,Room-based,25,23,20,Downtown
+2020-07-16,Hotel Program,Room-based,42,40,33,Etobicoke
+2023-09-11,Hotel Program,Room-based,10,9,9,Scarborough
+2022-04-02,Crisis Services,Bed-based,145,139,135,Etobicoke
+2020-06-24,Hotel Program,Room-based,25,23,21,Etobicoke
+2018-02-10,Hotel Program,Room-based,44,42,34,North York
+2021-05-26,Family Program,Room-based,24,22,20,Downtown
+2020-12-09,Hotel Program,Room-based,34,34,31,Scarborough
+2023-04-09,Family Program,Room-based,49,49,42,Etobicoke
+2022-11-16,Family Program,Room-based,26,26,24,Downtown
+2023-02-14,Crisis Services,Bed-based,148,131,120,Scarborough
+2020-03-16,Family Program,Room-based,46,42,41,Etobicoke
+2023-03-29,Shelter,Bed-based,193,176,137,Etobicoke
+2018-11-28,Shelter,Bed-based,142,124,120,Scarborough
+2019-09-10,Hotel Program,Room-based,22,20,17,Scarborough
+2021-12-31,Hotel Program,Room-based,46,46,44,Scarborough
+2023-11-11,Shelter,Bed-based,116,100,99,North York
+2021-06-30,Shelter,Bed-based,87,83,67,Etobicoke
+2021-02-27,Family Program,Room-based,40,35,33,Downtown
+2018-05-14,Family Program,Room-based,39,35,31,Scarborough
+2023-10-24,Shelter,Bed-based,77,72,57,Scarborough
+2018-09-21,Hotel Program,Room-based,14,12,10,Scarborough
+2018-07-13,Shelter,Bed-based,70,66,51,Scarborough
+2023-04-13,Shelter,Bed-based,145,137,105,Scarborough
+2021-01-18,Hotel Program,Room-based,22,22,17,North York
+2020-01-10,Crisis Services,Bed-based,187,165,150,Etobicoke
+2023-05-13,Hotel Program,Room-based,15,13,12,Etobicoke
+2018-03-12,Crisis Services,Bed-based,96,87,79,Etobicoke
+2019-06-04,Hotel Program,Room-based,19,19,17,North York
+2022-02-12,Shelter,Bed-based,79,68,53,North York
+2019-05-10,Hotel Program,Room-based,29,25,21,Scarborough
+2019-11-29,Hotel Program,Room-based,27,26,26,North York
+2019-01-17,Shelter,Bed-based,131,112,94,Etobicoke
+2022-10-22,Crisis Services,Bed-based,70,70,55,North York
+2018-11-17,Family Program,Room-based,48,41,39,Etobicoke
+2022-12-07,Hotel Program,Room-based,12,11,11,North York
+2019-12-26,Shelter,Bed-based,192,188,159,Downtown
+2020-03-30,Hotel Program,Room-based,28,25,23,North York
+2021-10-11,Family Program,Room-based,46,43,37,Downtown
+2018-07-31,Crisis Services,Bed-based,118,110,87,Etobicoke
+2018-02-18,Shelter,Bed-based,195,179,163,Downtown
+2023-12-15,Hotel Program,Room-based,37,37,35,Scarborough
+2021-07-02,Crisis Services,Bed-based,124,113,97,North York
+2022-09-09,Family Program,Room-based,14,13,11,Scarborough
+2023-05-08,Hotel Program,Room-based,33,33,27,Etobicoke
+2022-07-12,Hotel Program,Room-based,42,36,28,Downtown
+2023-11-15,Family Program,Room-based,45,44,37,Downtown
+2018-04-07,Shelter,Bed-based,62,55,44,Etobicoke
+2023-06-02,Hotel Program,Room-based,29,25,20,Downtown
+2023-03-11,Shelter,Bed-based,173,150,134,Scarborough
+2022-08-26,Family Program,Room-based,14,12,11,North York
+2020-04-05,Crisis Services,Bed-based,146,129,107,Scarborough
+2018-04-03,Crisis Services,Bed-based,162,159,155,North York
+2020-03-09,Shelter,Bed-based,57,52,42,Downtown
+2019-08-23,Crisis Services,Bed-based,100,96,86,Downtown
+2023-02-06,Crisis Services,Bed-based,117,116,106,Etobicoke
+2020-03-04,Crisis Services,Bed-based,157,141,134,Scarborough
+2019-10-29,Family Program,Room-based,45,43,37,Scarborough
+2022-07-21,Shelter,Bed-based,60,57,46,Downtown
+2023-01-25,Shelter,Bed-based,59,53,47,Scarborough
+2020-09-29,Crisis Services,Bed-based,134,114,98,Scarborough
+2022-05-17,Hotel Program,Room-based,49,44,39,North York
+2018-08-16,Family Program,Room-based,44,39,34,Downtown
+2019-04-27,Crisis Services,Bed-based,51,47,46,Downtown
+2023-09-21,Crisis Services,Bed-based,126,120,92,North York
+2022-07-05,Crisis Services,Bed-based,108,97,81,Etobicoke
+2022-11-29,Family Program,Room-based,43,40,35,Etobicoke
+2020-07-03,Family Program,Room-based,17,15,14,Scarborough
+2021-07-24,Family Program,Room-based,14,12,11,Scarborough
+2022-10-16,Family Program,Room-based,21,18,14,Etobicoke
+2023-04-30,Crisis Services,Bed-based,50,49,46,North York
+2020-04-23,Hotel Program,Room-based,32,29,24,North York
+2018-07-17,Family Program,Room-based,11,11,11,Downtown
+2021-10-02,Family Program,Room-based,24,23,20,Etobicoke
+2022-06-21,Hotel Program,Room-based,46,40,31,Scarborough
+2018-07-06,Family Program,Room-based,50,48,40,Etobicoke
+2019-10-21,Crisis Services,Bed-based,145,133,124,Etobicoke
+2021-09-07,Hotel Program,Room-based,48,45,39,Etobicoke
+2022-07-07,Family Program,Room-based,50,48,45,Scarborough
+2023-07-02,Crisis Services,Bed-based,108,107,88,Scarborough
+2020-11-07,Family Program,Room-based,18,17,15,North York
+2021-05-26,Hotel Program,Room-based,20,20,19,North York
+2022-06-02,Crisis Services,Bed-based,134,120,112,Etobicoke
+2023-02-21,Hotel Program,Room-based,48,41,33,Etobicoke
+2023-06-15,Family Program,Room-based,37,33,25,Scarborough
+2018-05-04,Crisis Services,Bed-based,138,133,117,Etobicoke
+2021-01-06,Shelter,Bed-based,189,179,160,North York
+2020-02-07,Crisis Services,Bed-based,133,123,95,Scarborough
+2023-01-26,Shelter,Bed-based,141,120,90,Etobicoke
+2022-11-02,Shelter,Bed-based,146,125,99,Etobicoke
+2018-09-14,Crisis Services,Bed-based,154,135,122,Etobicoke
+2022-04-10,Family Program,Room-based,40,40,37,Scarborough
+2019-05-31,Family Program,Room-based,12,12,12,Downtown
+2018-06-14,Family Program,Room-based,43,40,35,North York
+2023-08-12,Crisis Services,Bed-based,171,146,144,Downtown
+2018-12-11,Shelter,Bed-based,69,61,52,Etobicoke
+2021-11-18,Shelter,Bed-based,157,136,102,North York
+2019-01-16,Family Program,Room-based,44,42,32,North York
+2018-02-13,Crisis Services,Bed-based,186,169,156,Scarborough
+2021-02-15,Family Program,Room-based,16,16,16,Scarborough
+2018-07-08,Crisis Services,Bed-based,124,112,94,Etobicoke
+2019-09-12,Family Program,Room-based,29,27,23,North York
+2020-07-09,Shelter,Bed-based,66,56,49,Etobicoke
+2021-07-10,Shelter,Bed-based,117,107,105,Downtown
+2022-11-02,Shelter,Bed-based,141,135,102,Etobicoke
+2019-03-19,Shelter,Bed-based,112,109,85,Etobicoke
+2020-10-03,Shelter,Bed-based,173,151,138,Scarborough
+2020-09-08,Family Program,Room-based,41,38,31,North York
+2022-05-26,Crisis Services,Bed-based,143,131,108,Scarborough
+2022-04-15,Hotel Program,Room-based,39,37,36,Downtown
+2022-12-26,Family Program,Room-based,44,40,36,Etobicoke
+2023-04-26,Crisis Services,Bed-based,89,82,69,Etobicoke
+2023-09-18,Family Program,Room-based,26,25,21,North York
+2021-04-20,Family Program,Room-based,20,18,16,North York
+2021-02-17,Family Program,Room-based,10,9,7,Downtown
+2019-01-09,Shelter,Bed-based,72,64,57,Scarborough
+2020-11-15,Hotel Program,Room-based,36,33,30,Downtown
+2019-07-10,Hotel Program,Room-based,12,12,10,North York
+2018-03-29,Crisis Services,Bed-based,175,174,162,North York
+2021-10-22,Family Program,Room-based,50,47,46,North York
+2021-03-27,Family Program,Room-based,39,37,33,Etobicoke
+2018-11-03,Hotel Program,Room-based,18,18,15,Scarborough
+2019-09-14,Shelter,Bed-based,145,139,129,North York
+2021-06-30,Shelter,Bed-based,103,102,83,Downtown
+2018-12-28,Shelter,Bed-based,180,171,142,Downtown
+2018-07-30,Family Program,Room-based,10,9,7,Scarborough
+2020-07-27,Crisis Services,Bed-based,52,50,49,Scarborough
+2020-02-19,Shelter,Bed-based,102,94,93,Etobicoke
+2023-01-25,Hotel Program,Room-based,48,47,39,North York
+2019-07-24,Crisis Services,Bed-based,68,67,59,Scarborough
+2018-02-20,Hotel Program,Room-based,31,29,24,Etobicoke
+2023-03-04,Crisis Services,Bed-based,181,166,131,North York
+2020-01-03,Hotel Program,Room-based,40,38,37,Downtown
+2021-10-15,Shelter,Bed-based,185,177,151,Etobicoke
+2021-04-11,Hotel Program,Room-based,39,39,38,Downtown
+2020-04-04,Family Program,Room-based,46,42,38,Downtown
+2019-02-12,Family Program,Room-based,40,36,34,North York
+2020-07-28,Crisis Services,Bed-based,62,60,45,Scarborough
+2021-10-13,Shelter,Bed-based,166,164,147,Etobicoke
+2021-02-14,Crisis Services,Bed-based,80,75,57,Downtown
+2021-12-15,Family Program,Room-based,35,31,31,Etobicoke
+2022-05-17,Family Program,Room-based,49,45,39,Downtown
+2020-12-02,Family Program,Room-based,12,12,9,Scarborough
+2020-04-21,Shelter,Bed-based,54,50,45,Etobicoke
+2018-01-15,Hotel Program,Room-based,49,44,43,North York
+2018-01-09,Hotel Program,Room-based,30,27,21,Downtown
+2023-12-19,Hotel Program,Room-based,23,20,20,North York
+2018-08-25,Crisis Services,Bed-based,118,109,105,Scarborough
+2020-07-05,Crisis Services,Bed-based,140,137,121,North York
+2022-04-22,Hotel Program,Room-based,25,21,20,Scarborough
+2022-06-15,Shelter,Bed-based,68,66,61,Scarborough
+2023-03-25,Hotel Program,Room-based,23,20,20,North York
+2021-08-24,Shelter,Bed-based,82,78,73,North York
+2022-07-15,Hotel Program,Room-based,26,25,22,North York
+2023-01-30,Crisis Services,Bed-based,85,80,78,Etobicoke
+2021-09-03,Shelter,Bed-based,192,181,144,Downtown
+2022-10-04,Hotel Program,Room-based,29,27,22,Etobicoke
+2018-02-20,Shelter,Bed-based,185,176,135,Etobicoke
+2020-07-02,Family Program,Room-based,25,25,24,Scarborough
+2023-03-31,Hotel Program,Room-based,23,22,20,North York
+2021-11-18,Crisis Services,Bed-based,172,148,113,North York
+2023-07-18,Shelter,Bed-based,121,112,110,Etobicoke
+2019-01-13,Shelter,Bed-based,91,80,80,North York
+2019-11-23,Crisis Services,Bed-based,119,109,104,North York
+2022-10-28,Shelter,Bed-based,92,80,66,Downtown
+2023-12-06,Hotel Program,Room-based,30,26,22,Downtown
+2019-12-08,Crisis Services,Bed-based,152,148,125,Etobicoke
+2018-01-03,Shelter,Bed-based,69,69,53,Scarborough
+2023-12-13,Crisis Services,Bed-based,56,51,46,Scarborough
+2018-11-21,Shelter,Bed-based,157,142,118,Scarborough
+2018-04-19,Family Program,Room-based,19,17,13,North York
+2021-08-01,Crisis Services,Bed-based,98,90,68,Scarborough
+2019-12-05,Hotel Program,Room-based,27,27,23,Downtown
+2021-03-02,Crisis Services,Bed-based,153,147,122,Downtown
+2022-10-08,Family Program,Room-based,13,12,11,North York
+2018-05-31,Crisis Services,Bed-based,134,124,105,North York
+2022-03-03,Family Program,Room-based,11,11,9,Downtown
+2023-09-09,Family Program,Room-based,13,12,9,North York
+2019-09-01,Hotel Program,Room-based,21,18,18,North York
+2019-07-01,Shelter,Bed-based,76,65,58,Scarborough
+2018-12-16,Family Program,Room-based,20,20,15,Downtown
+2018-06-06,Hotel Program,Room-based,48,47,41,Etobicoke
+2021-05-05,Shelter,Bed-based,81,76,66,Etobicoke
+2020-12-08,Family Program,Room-based,39,34,30,North York
+2020-12-18,Hotel Program,Room-based,13,12,12,North York
+2023-04-30,Family Program,Room-based,19,17,13,Scarborough
+2018-03-22,Family Program,Room-based,32,29,23,Etobicoke
+2019-03-23,Crisis Services,Bed-based,152,147,112,Downtown
+2021-01-30,Family Program,Room-based,41,40,34,North York
+2019-06-02,Family Program,Room-based,15,15,12,North York
+2021-06-14,Crisis Services,Bed-based,135,134,133,North York
+2020-11-22,Crisis Services,Bed-based,152,138,108,North York
+2021-05-31,Hotel Program,Room-based,33,28,21,Etobicoke
+2018-11-12,Crisis Services,Bed-based,79,71,62,Downtown
+2018-11-16,Family Program,Room-based,23,23,18,Scarborough
+2020-06-21,Crisis Services,Bed-based,121,111,95,Etobicoke
+2022-02-04,Family Program,Room-based,35,35,27,Scarborough
+2021-12-02,Family Program,Room-based,33,32,26,Downtown
+2023-06-30,Hotel Program,Room-based,28,25,23,North York
+2022-11-16,Shelter,Bed-based,93,92,75,Scarborough
+2022-01-20,Shelter,Bed-based,68,63,50,North York
+2022-11-04,Crisis Services,Bed-based,115,112,87,Downtown
+2018-10-08,Crisis Services,Bed-based,93,83,76,Scarborough
+2019-07-04,Hotel Program,Room-based,40,40,33,Etobicoke
+2019-12-28,Hotel Program,Room-based,31,29,24,North York
+2020-06-10,Family Program,Room-based,32,28,22,Etobicoke
+2021-10-23,Shelter,Bed-based,100,97,83,Scarborough
+2022-11-06,Shelter,Bed-based,163,142,130,Downtown
+2019-07-21,Shelter,Bed-based,161,150,143,Scarborough
+2022-11-30,Crisis Services,Bed-based,96,91,89,Scarborough
+2018-02-03,Shelter,Bed-based,96,90,80,Etobicoke
+2021-12-04,Shelter,Bed-based,180,167,153,Scarborough
+2022-11-13,Family Program,Room-based,16,16,12,North York
+2020-10-07,Crisis Services,Bed-based,80,71,69,North York
+2019-03-22,Hotel Program,Room-based,35,30,25,North York
+2018-02-11,Family Program,Room-based,29,26,22,Etobicoke
+2019-09-13,Hotel Program,Room-based,25,22,21,North York
+2023-06-28,Shelter,Bed-based,135,133,103,Scarborough
+2023-08-07,Shelter,Bed-based,165,154,153,Etobicoke
+2021-04-03,Crisis Services,Bed-based,93,81,78,Scarborough
+2019-04-26,Hotel Program,Room-based,22,19,15,Scarborough
+2020-12-07,Shelter,Bed-based,119,103,80,Etobicoke
+2022-10-21,Shelter,Bed-based,123,120,102,Scarborough
+2020-06-11,Family Program,Room-based,44,38,30,Scarborough
+2018-08-16,Hotel Program,Room-based,33,30,26,Etobicoke
+2019-09-07,Crisis Services,Bed-based,156,144,136,North York
+2020-03-02,Shelter,Bed-based,66,59,48,North York
+2019-07-22,Hotel Program,Room-based,25,25,21,North York
+2020-10-27,Crisis Services,Bed-based,192,189,146,Downtown
+2020-03-12,Hotel Program,Room-based,12,12,10,Downtown
+2018-09-23,Hotel Program,Room-based,26,25,25,North York
+2018-04-13,Shelter,Bed-based,198,195,180,Downtown
+2019-07-30,Hotel Program,Room-based,39,36,35,North York
+2023-10-23,Shelter,Bed-based,115,105,94,Downtown
+2020-12-05,Crisis Services,Bed-based,61,55,42,Downtown
+2020-11-12,Family Program,Room-based,43,40,38,North York
+2022-06-28,Crisis Services,Bed-based,116,100,76,Etobicoke
+2022-01-02,Family Program,Room-based,13,12,11,Scarborough
+2018-04-19,Shelter,Bed-based,73,65,55,Etobicoke
+2022-03-03,Hotel Program,Room-based,29,28,22,Etobicoke
+2020-03-06,Family Program,Room-based,11,11,10,Downtown
+2023-04-21,Hotel Program,Room-based,45,39,35,Etobicoke
+2022-08-25,Family Program,Room-based,42,39,34,North York
+2018-11-01,Crisis Services,Bed-based,166,158,150,Scarborough
+2019-10-09,Shelter,Bed-based,86,84,81,Downtown
+2018-10-04,Crisis Services,Bed-based,148,143,143,North York
+2021-07-15,Crisis Services,Bed-based,150,137,117,Etobicoke
+2021-05-15,Family Program,Room-based,11,11,9,Downtown
+2022-02-17,Crisis Services,Bed-based,94,90,70,Etobicoke
+2019-11-13,Hotel Program,Room-based,41,37,37,Scarborough
+2021-08-19,Family Program,Room-based,26,24,24,North York
+2023-12-11,Family Program,Room-based,36,36,35,Scarborough
+2022-06-16,Family Program,Room-based,30,30,26,Scarborough
+2018-06-16,Shelter,Bed-based,169,149,141,North York
+2020-09-15,Shelter,Bed-based,200,179,152,North York
+2018-04-28,Hotel Program,Room-based,17,15,11,Etobicoke
+2020-01-14,Crisis Services,Bed-based,72,62,53,North York
+2022-05-27,Family Program,Room-based,26,26,26,Downtown
+2018-01-09,Shelter,Bed-based,171,166,146,Downtown
+2022-08-18,Shelter,Bed-based,132,126,116,Etobicoke
+2020-10-10,Hotel Program,Room-based,42,38,29,Downtown
+2022-04-28,Shelter,Bed-based,152,135,118,Downtown
+2021-12-30,Shelter,Bed-based,65,64,60,North York
+2021-06-06,Crisis Services,Bed-based,59,53,46,North York
+2022-03-22,Hotel Program,Room-based,36,34,32,Etobicoke
+2021-12-10,Crisis Services,Bed-based,185,172,153,Downtown
+2019-09-26,Shelter,Bed-based,112,111,104,Scarborough
+2018-08-01,Family Program,Room-based,13,12,11,Scarborough
+2023-10-09,Shelter,Bed-based,67,63,53,Etobicoke
+2022-06-01,Hotel Program,Room-based,11,10,9,North York
+2021-09-03,Family Program,Room-based,41,37,33,North York
+2018-09-20,Hotel Program,Room-based,41,40,39,North York
+2021-04-20,Shelter,Bed-based,83,80,62,Downtown
+2019-07-30,Family Program,Room-based,41,40,34,Etobicoke
+2023-05-22,Crisis Services,Bed-based,125,112,102,North York
+2018-01-21,Hotel Program,Room-based,49,42,32,Downtown
+2019-06-02,Hotel Program,Room-based,28,28,22,Scarborough
+2018-10-12,Shelter,Bed-based,175,161,146,Downtown
+2019-12-16,Hotel Program,Room-based,37,35,34,Etobicoke
+2022-05-10,Crisis Services,Bed-based,142,124,108,Etobicoke
+2023-12-12,Crisis Services,Bed-based,123,105,83,Etobicoke
+2022-04-16,Crisis Services,Bed-based,121,107,100,Etobicoke
+2021-01-09,Family Program,Room-based,19,17,13,Etobicoke
+2020-08-12,Crisis Services,Bed-based,81,76,69,Downtown
+2023-09-09,Crisis Services,Bed-based,134,115,103,Downtown
+2018-09-21,Shelter,Bed-based,144,128,101,Etobicoke
+2018-06-14,Crisis Services,Bed-based,196,167,127,North York
+2023-05-01,Hotel Program,Room-based,19,17,13,Etobicoke
+2020-07-18,Hotel Program,Room-based,39,36,29,Downtown
+2018-04-03,Crisis Services,Bed-based,185,166,135,Downtown
+2021-11-18,Family Program,Room-based,45,43,41,Scarborough
+2020-10-23,Shelter,Bed-based,90,89,71,Scarborough
+2021-09-15,Family Program,Room-based,21,19,19,Downtown
+2019-08-17,Crisis Services,Bed-based,161,160,140,Scarborough
+2018-12-11,Shelter,Bed-based,88,76,65,Downtown
+2018-09-08,Shelter,Bed-based,72,69,61,Scarborough
+2021-01-16,Crisis Services,Bed-based,53,47,45,Scarborough
+2021-04-15,Hotel Program,Room-based,37,33,25,North York
+2018-11-05,Family Program,Room-based,10,9,7,Scarborough
+2019-01-07,Family Program,Room-based,26,23,23,Scarborough
+2022-07-27,Shelter,Bed-based,194,187,185,Scarborough
+2021-02-28,Hotel Program,Room-based,29,26,22,North York
+2023-03-01,Crisis Services,Bed-based,133,127,111,North York
+2022-01-15,Hotel Program,Room-based,20,18,15,Scarborough
+2018-01-29,Family Program,Room-based,20,17,14,Downtown
+2022-02-27,Crisis Services,Bed-based,154,148,139,North York
+2023-05-07,Crisis Services,Bed-based,108,96,88,Etobicoke
+2021-10-15,Crisis Services,Bed-based,130,117,103,Downtown
+2018-08-23,Hotel Program,Room-based,31,30,24,Scarborough
+2023-07-11,Crisis Services,Bed-based,120,102,95,Scarborough
+2022-01-19,Crisis Services,Bed-based,118,108,95,Scarborough
+2018-11-22,Hotel Program,Room-based,15,13,10,Scarborough
+2022-06-21,Shelter,Bed-based,137,127,112,North York
+2023-08-27,Shelter,Bed-based,177,176,149,Scarborough
+2020-07-10,Shelter,Bed-based,70,66,64,Downtown
+2019-10-15,Shelter,Bed-based,97,95,92,Etobicoke
+2019-07-23,Shelter,Bed-based,134,129,106,Downtown
+2019-05-04,Crisis Services,Bed-based,188,174,144,Scarborough
+2021-05-23,Shelter,Bed-based,60,59,49,North York
+2022-07-16,Family Program,Room-based,43,40,35,Downtown
+2022-01-06,Shelter,Bed-based,199,192,170,North York
+2021-04-11,Family Program,Room-based,31,29,25,Etobicoke
+2022-11-13,Shelter,Bed-based,66,57,54,Downtown
+2022-07-21,Shelter,Bed-based,128,119,95,Scarborough
+2018-02-13,Shelter,Bed-based,83,75,74,Scarborough
+2020-04-14,Family Program,Room-based,35,33,30,Downtown
+2018-04-22,Hotel Program,Room-based,24,23,23,North York
+2022-10-14,Shelter,Bed-based,84,75,66,Downtown
+2023-07-16,Family Program,Room-based,43,39,37,Etobicoke
+2021-04-03,Family Program,Room-based,24,21,21,Etobicoke
+2023-02-10,Shelter,Bed-based,90,77,58,Scarborough
+2021-07-02,Shelter,Bed-based,170,147,117,Etobicoke
+2022-01-03,Family Program,Room-based,48,42,40,Scarborough
+2021-01-24,Family Program,Room-based,27,24,22,North York
+2022-07-29,Hotel Program,Room-based,39,38,36,North York
+2023-06-02,Hotel Program,Room-based,26,24,23,Etobicoke
+2022-12-02,Shelter,Bed-based,62,58,47,Downtown
+2018-06-06,Shelter,Bed-based,135,127,103,North York
+2018-01-09,Crisis Services,Bed-based,173,149,122,North York
+2018-04-25,Family Program,Room-based,29,28,22,Etobicoke
+2023-03-13,Shelter,Bed-based,175,164,127,Downtown
+2021-06-15,Hotel Program,Room-based,47,45,40,Downtown
+2019-11-19,Shelter,Bed-based,176,161,141,Etobicoke
+2023-10-03,Crisis Services,Bed-based,86,81,66,Scarborough
+2021-07-18,Shelter,Bed-based,67,64,57,Scarborough
+2021-03-09,Hotel Program,Room-based,16,15,13,Scarborough
+2020-04-20,Family Program,Room-based,32,32,24,Downtown
+2019-12-01,Family Program,Room-based,48,43,37,Scarborough
+2022-11-06,Hotel Program,Room-based,16,14,11,Downtown
+2018-04-02,Crisis Services,Bed-based,196,179,152,Scarborough
+2020-03-07,Shelter,Bed-based,169,151,135,Downtown
+2023-02-19,Hotel Program,Room-based,40,37,29,Downtown
+2022-03-09,Shelter,Bed-based,184,169,133,North York
+2022-02-08,Hotel Program,Room-based,31,29,24,Downtown
+2020-02-02,Hotel Program,Room-based,37,32,27,Downtown
+2021-04-29,Shelter,Bed-based,61,54,43,Downtown
+2018-10-28,Hotel Program,Room-based,37,34,33,North York
+2022-09-16,Shelter,Bed-based,187,184,152,North York
+2023-04-27,Family Program,Room-based,46,41,34,North York
+2019-03-23,Hotel Program,Room-based,26,23,21,Scarborough
+2022-08-15,Family Program,Room-based,10,10,9,Scarborough
+2021-07-30,Shelter,Bed-based,124,114,89,Scarborough
+2023-09-29,Crisis Services,Bed-based,165,140,131,Scarborough
+2018-12-14,Shelter,Bed-based,110,94,80,North York
+2021-02-25,Family Program,Room-based,10,10,8,North York
+2023-03-28,Hotel Program,Room-based,40,37,35,North York
+2023-03-20,Hotel Program,Room-based,18,18,18,Downtown
+2018-02-21,Hotel Program,Room-based,11,11,11,Scarborough
+2023-11-08,Family Program,Room-based,11,11,11,Scarborough
+2020-12-09,Shelter,Bed-based,183,172,149,Etobicoke
+2020-05-02,Family Program,Room-based,29,27,26,North York
+2020-07-03,Shelter,Bed-based,170,158,131,Etobicoke
+2018-07-23,Hotel Program,Room-based,18,16,13,Downtown
+2018-12-21,Hotel Program,Room-based,21,20,19,North York
+2020-06-06,Hotel Program,Room-based,44,43,33,Scarborough
+2020-01-19,Crisis Services,Bed-based,87,84,74,Scarborough
+2020-06-28,Crisis Services,Bed-based,128,112,103,Scarborough
+2019-10-28,Hotel Program,Room-based,39,35,33,Scarborough
+2021-05-12,Shelter,Bed-based,62,60,56,Scarborough
+2018-12-08,Crisis Services,Bed-based,112,97,96,North York
+2023-09-26,Hotel Program,Room-based,44,42,42,Downtown
+2018-04-07,Hotel Program,Room-based,32,31,26,North York
+2020-03-26,Family Program,Room-based,23,23,23,Scarborough
+2023-10-10,Crisis Services,Bed-based,189,167,150,Scarborough
+2021-11-14,Family Program,Room-based,40,36,30,Scarborough
+2018-05-15,Hotel Program,Room-based,39,38,29,Scarborough
+2020-06-16,Family Program,Room-based,37,33,26,Scarborough
+2020-07-21,Hotel Program,Room-based,25,24,19,Scarborough
+2021-01-17,Family Program,Room-based,31,29,27,Etobicoke
+2020-09-11,Shelter,Bed-based,179,159,130,Scarborough
+2021-09-26,Shelter,Bed-based,151,142,141,North York
+2018-11-03,Family Program,Room-based,41,35,30,North York
+2023-06-12,Crisis Services,Bed-based,159,157,122,North York
+2021-06-01,Shelter,Bed-based,125,123,96,Downtown
+2021-04-15,Crisis Services,Bed-based,114,109,88,North York
+2018-09-13,Hotel Program,Room-based,23,23,22,Downtown
+2022-07-27,Hotel Program,Room-based,39,36,36,Scarborough
+2020-11-13,Crisis Services,Bed-based,70,68,54,Scarborough
+2022-09-09,Family Program,Room-based,27,26,26,Scarborough
+2018-04-11,Family Program,Room-based,19,17,14,North York
+2022-12-01,Shelter,Bed-based,142,127,114,North York
+2019-08-14,Crisis Services,Bed-based,178,157,122,Scarborough
+2019-09-12,Family Program,Room-based,25,24,18,Scarborough
+2021-11-09,Family Program,Room-based,22,21,18,Scarborough
+2023-09-08,Crisis Services,Bed-based,191,167,138,Scarborough
+2018-01-16,Family Program,Room-based,35,34,29,North York
+2020-02-10,Shelter,Bed-based,63,60,58,Scarborough
+2020-07-06,Hotel Program,Room-based,40,37,34,Etobicoke
+2020-09-29,Family Program,Room-based,50,43,43,Etobicoke
+2022-04-08,Crisis Services,Bed-based,140,125,94,Etobicoke
+2023-07-08,Shelter,Bed-based,67,63,55,Downtown
+2021-10-05,Crisis Services,Bed-based,64,64,54,Etobicoke
+2023-05-30,Shelter,Bed-based,104,89,73,North York
+2022-07-17,Hotel Program,Room-based,19,17,14,Scarborough
+2018-10-29,Hotel Program,Room-based,11,10,9,Etobicoke
+2018-12-02,Shelter,Bed-based,50,46,44,Downtown
+2019-02-23,Hotel Program,Room-based,37,32,28,North York
+2020-08-06,Shelter,Bed-based,89,87,69,Etobicoke
+2018-07-11,Family Program,Room-based,27,24,19,Etobicoke
+2019-05-06,Family Program,Room-based,27,25,20,North York
+2021-06-07,Hotel Program,Room-based,20,18,17,Downtown
+2020-05-26,Crisis Services,Bed-based,153,152,150,Downtown
+2021-05-23,Shelter,Bed-based,139,133,130,Scarborough
+2022-12-22,Crisis Services,Bed-based,129,117,100,Downtown
+2021-11-07,Hotel Program,Room-based,43,38,33,North York
+2020-05-07,Shelter,Bed-based,161,154,146,Etobicoke
+2022-04-03,Crisis Services,Bed-based,145,128,119,Etobicoke
+2018-08-27,Shelter,Bed-based,129,115,99,North York
