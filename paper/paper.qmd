@@ -1,0 +1,423 @@
+---
+title: "Assessing Shelter Capacity and Demand in Toronto's TSSS"
+author: 
+  - Elizabeth Luong
+thanks: "Code and data are available at: https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/"
+date: September 21, 2024
+date-format: long
+abstract: "This paper analyzes the capacity and demand of Toronto's Shelter and Support Services (TSSS) system across different neighborhoods. The data shows an uneven distribution of shelter resources, with some areas operating at near-full capacity while others are underutilized. High numbers of unavailable beds further limit the system's effectiveness in meeting demand. Addressing these issues could improve the allocation of shelter resources and ensure better support for those in need."
+format: pdf
+number-sections: true
+bibliography: references.bib
+---
+
+```{r}
+#| include: false
+#| warning: false
+#| message: false
+
+library(tidyverse)
+library(quarto)
+library(ggplot2)
+
+data <- read_csv(here::here("data/analysis_data/cleaned_tsss_data.csv"))
+
+neighborhood_summary <- read_csv(here::here("data/shelter_neighborhood_summary.csv"))
+
+
+```
+
+
+# Introduction
+
+Toronto's Shelter and Support Services (TSSS) plays a critical role in providing overnight shelter and services for individuals and families facing homelessness. These services are essential for supporting vulnerable populations, especially during periods of extreme weather or economic instability. Understanding how well the TSSS system meets the needs of its users is crucial for assessing the effectiveness of the services it provides.
+
+This paper explores data from the TSSS system to analyze shelter capacity, occupancy rates, and demand distribution across different neighborhoods. The analysis focuses on how well the shelter system manages its resources and whether certain neighborhoods are better equipped to meet the demand than others. Specifically, the paper examines whether shelters are operating at full capacity, where under utilization occurs, and how the system can be optimized to better serve Toronto’s homeless population.
+
+By exploring data made available from OpenDataToronto (@TorontoShelter2024), analyzed using R (@RCoreTeam2023), this paper aims to provide a data-driven critique of TSSS’s current operations. The findings from this study can help guide strategies for a more balanced distribution of shelter resources and identify areas where operational efficiency could be improved.
+
+For more on data processing approaches used, see @Rohan2024.
+
+# Data {#sec-mydatasection}
+
+The dataset used in this analysis was provided by Toronto Shelter and Support Services (TSSS) through OpenDataToronto (@TorontoShelter2024). The dataset includes information on the capacity, occupancy, and user counts of shelters across Toronto neighborhoods, offering an opportunity to investigate how shelter resources are distributed and utilized across the city. Data cleaning involved filtering for Toronto neighborhoods, extracting relevant fields such as shelter capacity (bed-based and room-based), occupancy, and user counts. These cleaned data were analyzed to understand the current state of shelter capacity versus demand in various neighborhoods. This dataset is updated daily and includes detailed information on various shelters and overnight service programs across Toronto. The data is recorded through the Shelter Management Information System (SMIS), which tracks occupancy and capacity in real-time.
+
+To enhance the analysis, geo-coding was applied to the shelter addresses using the Nominatim API from OpenStreetMap (@OpenStreetMapNominatim, 2024). This allowed the locations to be matched with their respective neighborhoods, improving the accuracy of the neighborhood-level analysis. The cleaned dataset was then used to investigate the distribution of shelter resources and the demand in each neighborhood.
+
+Several models were used to investigate the conditions of the shelters across neighborhoods. In this section, we detail the specific models used to investigate how well shelter resources are distributed and whether the available capacity meets demand in different areas. These models highlight imbalances, inefficiencies, and potential areas for improvement.
+
+Table $1$ was created by grouping the data by neighborhood and calculating key metrics, including total occupied beds, total available beds, and total user count. This summary allows us to examine the overall distribution of shelter resources and demand across neighborhoods, giving a clear picture of the capacity available in each area. Here are the first five entries of the table.
+
+```{r}
+#| label: table-1
+#| fig-cap: Neighborhood Summary
+#| echo: false
+#| fig-width: 10
+#| fig-height: 8
+#| warning: false
+
+library(gt)
+
+neighborhood_summary <- data %>%
+  group_by(NEIGHBORHOOD) %>%
+  summarize(
+    total_occupied_beds = sum(OCCUPIED_BEDS, na.rm = TRUE),
+    total_available_beds = sum(CAPACITY_ACTUAL_BED, na.rm = TRUE),
+    total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
+  )
+
+neighborhood_summary_table <- data %>%
+  group_by(NEIGHBORHOOD) %>%
+  summarize(
+    total_occupied_beds = sum(OCCUPIED_BEDS, na.rm = TRUE),
+    total_available_beds = sum(CAPACITY_ACTUAL_BED, na.rm = TRUE),
+    total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
+  ) %>%
+  slice_head(n = 5)
+
+
+neighborhood_summary_table %>%
+  gt() %>%
+  tab_header(
+    title = "Neighborhood Summary",
+    subtitle = "A summary of bed occupancy, available beds, and user count"
+  ) %>%
+  fmt_number(
+    columns = vars(total_occupied_beds, total_available_beds, total_user_count),
+    decimals = 0
+  ) %>%
+  tab_spanner(
+    label = "Beds",
+    columns = vars(total_occupied_beds, total_available_beds)
+  ) %>%
+  cols_label(
+    NEIGHBORHOOD = "Neighborhood",
+    total_occupied_beds = "Occupied Beds",
+    total_available_beds = "Available Beds",
+    total_user_count = "User Count"
+  ) 
+
+```
+
+The summary in table $1$ helps us identify how shelter resources are distributed across different neighborhoods. By examining the numbers in each row, we can identify neighborhoods that may be under strain due to high occupancy or where resources are under utilized due to low demand.
+
+
+The bar graph of total occupied beds by neighborhood (figure $1$) visualizes how many beds are currently in use across different parts of Toronto. This is useful for identifying areas where shelters are heavily used, possibly indicating areas of high homelessness or greater demand for shelter services.
+
+```{r}
+#| label: figure-1
+#| fig-cap: Total Occupied Beds by Neighborhood
+#| echo: false
+#| fig-width: 10
+#| fig-height: 8
+
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = total_occupied_beds)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  theme_minimal() +
+  labs(
+    title = "Total Occupied Beds by Neighborhood",
+    x = "Neighborhood",
+    y = "Total Occupied Beds"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+This graph call attention to neighborhoods where the shelter system is under pressure, showing areas where occupied beds are high. It provides a clear visual representation of how demand varies geographically, helping to pinpoint neighborhoods where shelters may need additional resources to meet local demand.
+
+Similarly, the bar graph of total available beds by neighborhood (figure $2$) shows where shelter capacity exists. By comparing this with the number of occupied beds, we can identify areas where capacity exceeds demand, suggesting under utilization of resources. This analysis can help in reallocating resources or rethinking shelter capacity in specific neighborhoods.
+
+```{r}
+#| label: figure-2
+#| fig-cap: Total Available Beds by Neighborhood
+#| echo: false
+#| fig-width: 10
+#| fig-height: 8
+
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = total_available_beds)) +
+  geom_bar(stat = "identity", fill = "lightgreen") +
+  theme_minimal() +
+  labs(
+    title = "Total Available Beds by Neighborhood",
+    x = "Neighborhood",
+    y = "Total Available Beds"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+
+This scatter plot with a line of best fit investigates the relationship between available beds and user count in each neighborhood (figure $3$). The goal is to explore whether neighborhoods with more available beds also tend to have more users, or if there are areas where available beds do not correspond to actual demand.
+
+```{r}
+#| label: figure-3
+#| fig-cap: Relationship Between Available Beds and User Count
+#| echo: false
+#| warning: false
+#| fig-width: 10
+#| fig-height: 8
+
+ggplot(data, aes(x = CAPACITY_ACTUAL_BED, y = SERVICE_USER_COUNT)) +
+  geom_point(color = "blue") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  theme_minimal() +
+  labs(
+    title = "Relationship Between Available Beds and User Count",
+    x = "Available Beds",
+    y = "User Count"
+  )
+
+```
+The line of best fit helps to identify trends or correlations in the data. If the correlation is weak or non-existent, it may indicate inefficiencies in how shelters are distributed. This model assists in understanding whether the system is responsive to actual demand, or whether capacity in certain areas is over or under allocated.
+
+The occupancy rate (figure $4$) is calculated as the ratio of occupied beds to available beds. The resulting bar graph visualizes this metric across neighborhoods, providing insight into which areas are operating at or near full capacity, and which neighborhoods may have significant underutilized resources.
+
+```{r}
+#| label: figure-4
+#| fig-cap: Occupancy Rate by Neighborhood
+#| echo: false
+#| fig-width: 10
+#| fig-height: 8
+#| warning: false
+
+neighborhood_summary <- neighborhood_summary %>%
+  mutate(occupancy_rate = (total_occupied_beds / total_available_beds) * 100)
+
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = occupancy_rate)) +
+  geom_bar(stat = "identity", fill = "purple") +
+  theme_minimal() +
+  labs(
+    title = "Occupancy Rate by Neighborhood",
+    x = "Neighborhood",
+    y = "Occupancy Rate (%)"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+The occupancy rate allows us to measure how efficiently shelter capacity is being used. Neighborhoods with very high occupancy rates are under strain, potentially requiring additional beds, while neighborhoods with low rates may have surplus capacity that could be reallocated. This model directly relates to the investigation into whether shelter capacity is being used efficiently across the city.
+
+The capacity-to-demand ratio in figure $5$ provides a direct measure of how well each neighborhood’s shelter capacity is aligned with the number of users. This model divides the number of available beds by the total number of users to give a sense of how well each neighborhood's shelters are meeting demand.
+
+```{r}
+#| label: figure-5
+#| fig-cap: Capacity-to-Demand Ratio by Neighborhood
+#| echo: false
+#| fig-width: 10
+#| fig-height: 8
+#| warning: false
+
+neighborhood_summary <- neighborhood_summary %>%
+  mutate(capacity_demand_ratio = total_available_beds / total_user_count)
+
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = capacity_demand_ratio)) +
+  geom_bar(stat = "identity", fill = "orange") +
+  theme_minimal() +
+  labs(
+    title = "Capacity-to-Demand Ratio by Neighborhood",
+    x = "Neighborhood",
+    y = "Capacity-to-Demand Ratio"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+```
+This model visualizes whether neighborhoods have enough capacity to serve their users. Low capacity-to-demand ratios indicate neighborhoods where more beds are needed, while high ratios suggest an excess of capacity relative to demand.
+
+# Results 
+
+The analysis of shelter occupancy, capacity, and demand across Toronto neighborhoods provides insights into how the shelter system is operating. Using the data summarized in table $1$ and visualized in Total Occupied Beds (figure $1$), Total Available Beds (figure $2$), Available Beds vs. User Count (figure $3$), Occupancy Rates (figure $4$), and Capacity-to-Demand Ratios (figure $5$), we can draw several conclusions regarding the distribution of resources and their utilization.
+
+## High Demand and High-Capacity Neighborhoods
+Certain neighborhoods, such as Bathurst Quay and Church-Wellesley Village, stand out with both high occupancy and capacity figures. In table $1$, Bathurst Quay is shown to have $64,803$ occupied beds and $65,060$ available beds, which translates to an occupancy rate close to $100%$ (as shown in figure 4). Similarly, Church-Wellesley Village reports $20,282$ occupied beds and $20,630$ available beds, also indicating efficient resource use with minimal spare capacity.
+
+These high-demand neighborhoods are operating near full capacity, as indicated by their high occupancy rates (figure $4$). The capacity-to-demand ratio for these areas, shown in figure $5$, is close to $1$, meaning that shelter resources are closely matched to demand, but with little room for growth. This suggests that these neighborhoods may need additional beds or shelters to keep pace with growing demand, particularly during peak periods such as winter.
+
+## Underutilized Capacity and Low Demand
+In contrast, Abbotsford and Airport Corporate Centre show zero occupied beds despite having substantial user counts ($17,663$ and $41,302$, respectively). These neighborhoods have no reported available beds in table $1$, indicating potential discrepancies in data reporting or under utilization of available capacity. These areas may represent operational inefficiencies where the demand for shelter exists but the resources are not being properly allocated.
+
+This is reflected in the capacity-to-demand ratio (figure $5$), where these areas show a value near zero, meaning they have no available capacity to meet existing demand. Such discrepancies suggest the need for more robust data collection and possibly an increase in operational oversight to ensure that shelters in these areas can meet local needs.
+
+## Balanced and Efficiently Utilized Areas
+Neighborhoods such as Akina present a balanced picture, with $17,671$ occupied beds out of $18,131$ available beds, leading to a near-perfect occupancy rate. This area’s capacity-to-demand ratio is also very close to $1$, meaning that the resources in this neighborhood are efficiently allocated to match demand. Such areas demonstrate a well-functioning balance between supply and demand and can serve as models for how other neighborhoods could potentially optimize their shelter resources.
+
+## Trends in Available Beds vs. User Count
+The scatter plot in figure $3$ shows a positive correlation between the number of available beds and the user count across neighborhoods. This indicates that in general, areas with more available beds are able to serve a higher number of users. However, the strength of this correlation also suggests that areas with high user counts may struggle if capacity is not increased to meet future demand.
+
+
+# Discussion
+
+## First discussion point {#sec-first-point}
+
+This analysis of Toronto's Shelter and Support Services (TSSS) dataset (@TorontoShelter2024) brings to light several key issues regarding the distribution and utilization of shelter resources across Toronto. The results highlight both the areas where shelter resources are operating efficiently and areas where significant imbalances exist. The insights gained from this dataset provide important implications for policymakers and decision-makers involved in managing Toronto’s shelter system.
+
+## Key Findings
+
+One of the most notable findings is the high demand in certain neighborhoods, such as Bathurst Quay and Church-Wellesley Village, where shelter capacity is near or fully utilized. These areas have limited spare capacity, and without intervention, they are at risk of becoming overwhelmed by increasing demand, especially during colder months when the need for shelter typically rises. This is an urgent issue because high-occupancy rates leave little room for unexpected surges in homelessness, which can result from economic downturns, housing shortages, or adverse weather events.
+
+In contrast, neighborhoods like Abbotsford and Airport Corporate Centre demonstrate underutilization of resources, where shelter facilities are either not being reported accurately or there is an operational inefficiency leading to unoccupied beds despite high user counts. These discrepancies raise questions about the overall management of the shelter system and point to potential issues in resource allocation and data reporting. Ensuring that resources are correctly allocated to meet demand is critical to preventing strain on high-demand neighborhoods while ensuring that those who need shelter are properly served.
+
+Neighborhoods like Akina present a more balanced scenario where both capacity and demand are closely aligned. Such areas serve as models of efficient resource management, indicating that it is possible to maintain a well-balanced system where the number of available beds closely matches the number of users in need.
+
+## Implications for Policymakers
+
+**Balancing Resources** : High-demand neighborhoods with near-full capacity, such as Bathurst Quay, should be prioritized for resource reallocation. This may involve increasing the number of available beds or opening additional shelters to meet the growing need. Conversely, neighborhoods with underutilized capacity should be reviewed to determine whether resources can be better deployed elsewhere, particularly if the data inaccuracies suggest that beds are not being fully reported or utilized.
+
+**Improving Data Accuracy**: The discrepancies in some neighborhoods, where there is a mismatch between user counts and bed occupancy, highlight the need for improved data accuracy and reporting. Accurate, real-time data is critical for making informed decisions about resource allocation. Policymakers should invest in better reporting systems to ensure that bed availability, occupancy rates, and demand are recorded accurately and updated regularly.
+
+**Planning for Seasonal Demand**: The shelter system must be prepared for seasonal fluctuations in demand, particularly during the winter months. High-occupancy neighborhoods are likely to experience even greater pressure during these times, and without adequate preparation, the system may struggle to meet demand. Policymakers should consider seasonal expansions in high-demand areas or flexible resource models that allow for increased capacity during peak periods.
+
+**Prioritizing High-Impact Areas**: Areas like Bathurst Quay and Church-Wellesley Village are clearly hotspots of shelter demand. Policymakers must ensure that these areas receive the attention they need, including additional beds, staff, and support services. These neighborhoods could also benefit from increased social services and housing assistance programs to help reduce the number of people relying on shelters as a primary residence.
+
+**Addressing Inefficiencies in Low-Demand Areas**: For neighborhoods like Abbotsford, where there is little to no reported occupancy despite significant user counts, policymakers should investigate the reasons behind these inefficiencies. It may be necessary to redirect resources to more high-demand areas or identify operational barriers that prevent the effective use of shelter space in these neighborhoods.
+
+## Conclusion
+This analysis comes at a critical time for Toronto’s shelter system. The city is facing a growing housing crisis, with rising rent costs, housing shortages, and increasing numbers of individuals and families experiencing homelessness. The shelter system plays a crucial role in ensuring that Toronto's most vulnerable populations have access to safe and secure housing, particularly during extreme weather conditions or economic downturns. The high occupancy rates in several neighborhoods suggest that without immediate intervention, overcrowding in these shelters will continue to worsen. Overcrowded shelters not only create unsafe conditions but also reduce the quality of care and support available to those in need. Taking action now will help avoid a future crisis where the shelter system is unable to cope with rising demand. The disparities between neighborhoods in terms of resource utilization and demand highlight an important equity issue. Every individual in need of shelter deserves access to adequate and timely resources. Ensuring a fair distribution of shelter resources across neighborhoods is key to providing equal access to all those who need support, regardless of where they live. Preparing now by increasing capacity in high-demand areas and addressing inefficiencies in underutilized areas will make the system more resilient in the long run. Finally, this data emphasizes the importance of long-term planning and sustainable solutions to address homelessness. Beyond expanding shelter capacity, policymakers should focus on tackling the root causes of homelessness, such as affordable housing shortages, unemployment, and mental health support. By investing in housing-first initiatives and other supportive services, Toronto can reduce the strain on its shelter system and provide more permanent solutions for those in need.
+
+\newpage
+
+\appendix
+
+# Appendix {-}
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 8
+#| warning: false
+
+#### Summarize data ####
+# Table 1: Neighborhood Summary
+neighborhood_summary <- data %>%
+  group_by(NEIGHBORHOOD) %>%
+  summarize(
+    total_occupied_beds = sum(OCCUPIED_BEDS, na.rm = TRUE),
+    total_available_beds = sum(CAPACITY_ACTUAL_BED, na.rm = TRUE),
+    total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
+  )
+
+neighborhood_summary_table <- data %>%
+  group_by(NEIGHBORHOOD) %>%
+  summarize(
+    total_occupied_beds = sum(OCCUPIED_BEDS, na.rm = TRUE),
+    total_available_beds = sum(CAPACITY_ACTUAL_BED, na.rm = TRUE),
+    total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
+  ) %>%
+  slice_head(n = 5)
+
+
+neighborhood_summary_table %>%
+  gt() %>%
+  tab_header(
+    title = "Neighborhood Summary",
+    subtitle = "A summary of bed occupancy, available beds, and user count"
+  ) %>%
+  fmt_number(
+    columns = vars(total_occupied_beds, total_available_beds, total_user_count),
+    decimals = 0
+  ) %>%
+  tab_spanner(
+    label = "Beds",
+    columns = vars(total_occupied_beds, total_available_beds)
+  ) %>%
+  cols_label(
+    NEIGHBORHOOD = "Neighborhood",
+    total_occupied_beds = "Occupied Beds",
+    total_available_beds = "Available Beds",
+    total_user_count = "User Count"
+  ) 
+
+#### Visualizations ####
+
+# Figure 1: Bar graph for total occupied beds by neighborhood
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = total_occupied_beds)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  theme_minimal() +
+  labs(
+    title = "Total Occupied Beds by Neighborhood",
+    x = "Neighborhood",
+    y = "Total Occupied Beds"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Rotate x-axis labels for readability
+
+# Figure 2: Bar graph for total available beds by neighborhood
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = total_available_beds)) +
+  geom_bar(stat = "identity", fill = "lightgreen") +
+  theme_minimal() +
+  labs(
+    title = "Total Available Beds by Neighborhood",
+    x = "Neighborhood",
+    y = "Total Available Beds"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Figure 3: Scatter plot with line of best fit for available beds vs user count
+ggplot(data, aes(x = CAPACITY_ACTUAL_BED, y = SERVICE_USER_COUNT)) +
+  geom_point(color = "blue") +
+  geom_smooth(method = "lm", se = FALSE, color = "red") +
+  theme_minimal() +
+  labs(
+    title = "Relationship Between Available Beds and User Count",
+    x = "Available Beds",
+    y = "User Count"
+  )
+
+# Figure 4: Bar graph for occupancy rate by neighborhood
+# First, calculate the occupancy rate
+neighborhood_summary <- neighborhood_summary %>%
+  mutate(occupancy_rate = (total_occupied_beds / total_available_beds) * 100)
+
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = occupancy_rate)) +
+  geom_bar(stat = "identity", fill = "purple") +
+  theme_minimal() +
+  labs(
+    title = "Occupancy Rate by Neighborhood",
+    x = "Neighborhood",
+    y = "Occupancy Rate (%)"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Figure 5: Bar graph for capacity-to-demand ratio by neighborhood
+# First, calculate the capacity-to-demand ratio
+neighborhood_summary <- neighborhood_summary %>%
+  mutate(capacity_demand_ratio = total_available_beds / total_user_count)
+
+ggplot(neighborhood_summary, aes(x = NEIGHBORHOOD, y = capacity_demand_ratio)) +
+  geom_bar(stat = "identity", fill = "orange") +
+  theme_minimal() +
+  labs(
+    title = "Capacity-to-Demand Ratio by Neighborhood",
+    x = "Neighborhood",
+    y = "Capacity-to-Demand Ratio"
+  ) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+
+#### Save Plots ####
+# Save all the plots in the appendix for further review
+ggsave("output/total_occupied_beds_by_neighborhood.png", plot = last_plot(), width = 10, height = 10)
+ggsave("output/total_available_beds_by_neighborhood.png", width = 10, height = 10)
+ggsave("output/scatter_plot_available_beds_vs_user_count.png", width = 10, height = 10)
+ggsave("output/occupancy_rate_by_neighborhood.png", width = 10, height = 10)
+ggsave("output/capacity_to_demand_ratio_by_neighborhood.png", width = 10, height = 10)
+
+
+```
+
+
+
+\newpage
+
+
+# References
+
+Toronto Shelter & Support Services. (2024). OpenDataToronto: About daily shelter & overnight service occupancy & capacity. Toronto Shelter & Support Services. https://open.toronto.ca/dataset/daily-shelter-overnight-service-occupancy-capacity/
+
+R Core Team. (2023). R: A language and environment for statistical computing. R Foundation for Statistical Computing. https://www.R-project.org/
+
+Alexander, R. (2024). Telling stories with data. https://tellingstorieswithdata.com/23-assessment.html
+
+OpenStreetMap contributors. (2024). Nominatim API: OpenStreetMap geocoding service. OpenStreetMap. https://nominatim.openstreetmap.org/ui/about.html
+
+
+
+
+
+
+
