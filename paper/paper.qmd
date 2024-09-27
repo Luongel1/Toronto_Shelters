@@ -24,6 +24,7 @@ data <- read_csv(here::here("data/analysis_data/cleaned_tsss_data.csv"))
 
 neighborhood_summary <- read_csv(here::here("data/shelter_neighborhood_summary.csv"))
 
+
 ```
 
 
@@ -45,7 +46,7 @@ To enhance the analysis, geo-coding was applied to the shelter addresses using t
 
 Several models were used to investigate the conditions of the shelters across neighborhoods. In this section, we detail the specific models used to investigate how well shelter resources are distributed and whether the available capacity meets demand in different areas. These models highlight imbalances, inefficiencies, and potential areas for improvement.
 
-Table $1$ was created by grouping the data by neighborhood and calculating key metrics, including total occupied beds, total available beds, and total user count. This summary allows us to examine the overall distribution of shelter resources and demand across neighborhoods, giving a clear picture of the capacity available in each area.
+Table $1$ was created by grouping the data by neighborhood and calculating key metrics, including total occupied beds, total available beds, and total user count. This summary allows us to examine the overall distribution of shelter resources and demand across neighborhoods, giving a clear picture of the capacity available in each area. Here are the first five entries of the table.
 
 ```{r}
 #| label: table-1
@@ -53,7 +54,9 @@ Table $1$ was created by grouping the data by neighborhood and calculating key m
 #| echo: false
 #| fig-width: 10
 #| fig-height: 8
+#| warning: false
 
+library(gt)
 
 neighborhood_summary <- data %>%
   group_by(NEIGHBORHOOD) %>%
@@ -62,6 +65,37 @@ neighborhood_summary <- data %>%
     total_available_beds = sum(CAPACITY_ACTUAL_BED, na.rm = TRUE),
     total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
   )
+
+neighborhood_summary_table <- data %>%
+  group_by(NEIGHBORHOOD) %>%
+  summarize(
+    total_occupied_beds = sum(OCCUPIED_BEDS, na.rm = TRUE),
+    total_available_beds = sum(CAPACITY_ACTUAL_BED, na.rm = TRUE),
+    total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
+  ) %>%
+  slice_head(n = 5)
+
+
+neighborhood_summary_table %>%
+  gt() %>%
+  tab_header(
+    title = "Neighborhood Summary",
+    subtitle = "A summary of bed occupancy, available beds, and user count"
+  ) %>%
+  fmt_number(
+    columns = vars(total_occupied_beds, total_available_beds, total_user_count),
+    decimals = 0
+  ) %>%
+  tab_spanner(
+    label = "Beds",
+    columns = vars(total_occupied_beds, total_available_beds)
+  ) %>%
+  cols_label(
+    NEIGHBORHOOD = "Neighborhood",
+    total_occupied_beds = "Occupied Beds",
+    total_available_beds = "Available Beds",
+    total_user_count = "User Count"
+  ) 
 
 ```
 
@@ -142,6 +176,7 @@ The occupancy rate (figure $4$) is calculated as the ratio of occupied beds to a
 #| echo: false
 #| fig-width: 10
 #| fig-height: 8
+#| warning: false
 
 neighborhood_summary <- neighborhood_summary %>%
   mutate(occupancy_rate = (total_occupied_beds / total_available_beds) * 100)
@@ -167,6 +202,7 @@ The capacity-to-demand ratio in figure $5$ provides a direct measure of how well
 #| echo: false
 #| fig-width: 10
 #| fig-height: 8
+#| warning: false
 
 neighborhood_summary <- neighborhood_summary %>%
   mutate(capacity_demand_ratio = total_available_beds / total_user_count)
@@ -232,9 +268,7 @@ Neighborhoods like Akina present a more balanced scenario where both capacity an
 **Addressing Inefficiencies in Low-Demand Areas**: For neighborhoods like Abbotsford, where there is little to no reported occupancy despite significant user counts, policymakers should investigate the reasons behind these inefficiencies. It may be necessary to redirect resources to more high-demand areas or identify operational barriers that prevent the effective use of shelter space in these neighborhoods.
 
 ## Conclusion
-This analysis comes at a critical time for Toronto’s shelter system. The city is facing a growing housing crisis, with rising rent costs, housing shortages, and increasing numbers of individuals and families experiencing homelessness. The shelter system plays a crucial role in ensuring that Toronto's most vulnerable populations have access to safe and secure housing, particularly during extreme weather conditions or economic downturns. The high occupancy rates in several neighborhoods suggest that without immediate intervention, overcrowding in these shelters will continue to worsen. Overcrowded shelters not only create unsafe conditions but also reduce the quality of care and support available to those in need. Taking action now will help avoid a future crisis where the shelter system is unable to cope with rising demand. The disparities between neighborhoods in terms of resource utilization and demand highlight an important equity issue. Every individual in need of shelter deserves access to adequate and timely resources. Ensuring a fair distribution of shelter resources across neighborhoods is key to providing equal access to all those who need support, regardless of where they live. The shelter system must be flexible and resilient to respond to future challenges, including potential increases in homelessness due to economic instability, public health crises, or other unforeseen events. Preparing now by increasing capacity in high-demand areas and addressing inefficiencies in underutilized areas will make the system more resilient in the long run. Finally, this data emphasizes the importance of long-term planning and sustainable solutions to address homelessness. Beyond expanding shelter capacity, policymakers should focus on tackling the root causes of homelessness, such as affordable housing shortages, unemployment, and mental health support. By investing in housing-first initiatives and other supportive services, Toronto can reduce the strain on its shelter system and provide more permanent solutions for those in need.
-
-In summary, this analysis has provided important insights into the state of Toronto’s shelter system. It highlights both the strengths and weaknesses of current resource allocation and utilization, providing a roadmap for policymakers to address imbalances and prepare for future challenges. Taking action on these findings will help ensure that Toronto's shelter system is better equipped to serve its vulnerable populations, offering both short-term support and long-term solutions to homelessness in the city.
+This analysis comes at a critical time for Toronto’s shelter system. The city is facing a growing housing crisis, with rising rent costs, housing shortages, and increasing numbers of individuals and families experiencing homelessness. The shelter system plays a crucial role in ensuring that Toronto's most vulnerable populations have access to safe and secure housing, particularly during extreme weather conditions or economic downturns. The high occupancy rates in several neighborhoods suggest that without immediate intervention, overcrowding in these shelters will continue to worsen. Overcrowded shelters not only create unsafe conditions but also reduce the quality of care and support available to those in need. Taking action now will help avoid a future crisis where the shelter system is unable to cope with rising demand. The disparities between neighborhoods in terms of resource utilization and demand highlight an important equity issue. Every individual in need of shelter deserves access to adequate and timely resources. Ensuring a fair distribution of shelter resources across neighborhoods is key to providing equal access to all those who need support, regardless of where they live. Preparing now by increasing capacity in high-demand areas and addressing inefficiencies in underutilized areas will make the system more resilient in the long run. Finally, this data emphasizes the importance of long-term planning and sustainable solutions to address homelessness. Beyond expanding shelter capacity, policymakers should focus on tackling the root causes of homelessness, such as affordable housing shortages, unemployment, and mental health support. By investing in housing-first initiatives and other supportive services, Toronto can reduce the strain on its shelter system and provide more permanent solutions for those in need.
 
 \newpage
 
@@ -246,6 +280,7 @@ In summary, this analysis has provided important insights into the state of Toro
 #| echo: false
 #| fig-width: 10
 #| fig-height: 8
+#| warning: false
 
 #### Summarize data ####
 # Table 1: Neighborhood Summary
@@ -257,8 +292,36 @@ neighborhood_summary <- data %>%
     total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
   )
 
-# View the summary table
-print(neighborhood_summary)
+neighborhood_summary_table <- data %>%
+  group_by(NEIGHBORHOOD) %>%
+  summarize(
+    total_occupied_beds = sum(OCCUPIED_BEDS, na.rm = TRUE),
+    total_available_beds = sum(CAPACITY_ACTUAL_BED, na.rm = TRUE),
+    total_user_count = sum(SERVICE_USER_COUNT, na.rm = TRUE)
+  ) %>%
+  slice_head(n = 5)
+
+
+neighborhood_summary_table %>%
+  gt() %>%
+  tab_header(
+    title = "Neighborhood Summary",
+    subtitle = "A summary of bed occupancy, available beds, and user count"
+  ) %>%
+  fmt_number(
+    columns = vars(total_occupied_beds, total_available_beds, total_user_count),
+    decimals = 0
+  ) %>%
+  tab_spanner(
+    label = "Beds",
+    columns = vars(total_occupied_beds, total_available_beds)
+  ) %>%
+  cols_label(
+    NEIGHBORHOOD = "Neighborhood",
+    total_occupied_beds = "Occupied Beds",
+    total_available_beds = "Available Beds",
+    total_user_count = "User Count"
+  ) 
 
 #### Visualizations ####
 
@@ -350,7 +413,7 @@ R Core Team. (2023). R: A language and environment for statistical computing. R 
 
 Alexander, R. (2024). Telling stories with data. https://tellingstorieswithdata.com/23-assessment.html
 
-OpenStreetMap contributors. (2024). Nominatim API: OpenStreetMap geocoding service. OpenStreetMap. https://nominatim.openstreetmap.org
+OpenStreetMap contributors. (2024). Nominatim API: OpenStreetMap geocoding service. OpenStreetMap. https://nominatim.openstreetmap.org/ui/about.html
 
 
 
