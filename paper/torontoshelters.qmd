@@ -15,6 +15,7 @@ bibliography: references.bib
 #| include: false
 #| warning: false
 #| message: false
+#| echo: false
 
 library(tidyverse)
 library(quarto)
@@ -23,6 +24,7 @@ library(ggplot2)
 data <- read_csv(here::here("data/analysis_data/cleaned_tsss_data.csv"))
 
 neighborhood_summary <- read_csv(here::here("data/shelter_neighborhood_summary.csv"))
+
 
 
 ```
@@ -40,7 +42,7 @@ For more on data processing approaches used, see @Rohan2024.
 
 # Data {#sec-mydatasection}
 
-The dataset used in this analysis was provided by Toronto Shelter and Support Services (TSSS) through OpenDataToronto (@TorontoShelter2024). The dataset includes information on the capacity, occupancy, and user counts of shelters across Toronto neighborhoods, offering an opportunity to investigate how shelter resources are distributed and utilized across the city. Data cleaning involved filtering for Toronto neighborhoods, extracting relevant fields such as shelter capacity (bed-based and room-based), occupancy, and user counts. These cleaned data were analyzed to understand the current state of shelter capacity versus demand in various neighborhoods.
+The dataset used in this analysis was provided by Toronto Shelter and Support Services (TSSS) through OpenDataToronto (@TorontoShelter2024). The dataset includes information on the capacity, occupancy, and user counts of shelters across Toronto neighborhoods, offering an opportunity to investigate how shelter resources are distributed and utilized across the city. Data cleaning involved filtering for Toronto neighborhoods, extracting relevant fields such as shelter capacity (bed-based and room-based), occupancy, and user counts. These cleaned data were analyzed to understand the current state of shelter capacity versus demand in various neighborhoods. This dataset is updated daily and includes detailed information on various shelters and overnight service programs across Toronto. The data is recorded through the Shelter Management Information System (SMIS), which tracks occupancy and capacity in real-time.
 
 To enhance the analysis, geo-coding was applied to the shelter addresses using the Nominatim API from OpenStreetMap (@OpenStreetMapNominatim, 2024). This allowed the locations to be matched with their respective neighborhoods, improving the accuracy of the neighborhood-level analysis. The cleaned dataset was then used to investigate the distribution of shelter resources and the demand in each neighborhood.
 

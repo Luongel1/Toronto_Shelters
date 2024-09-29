@@ -68,3 +68,4 @@ data_simulate <- tibble(
 #### Write csv
 write_csv(data_simulate, file = "data/raw_data/simulated_tsss_data.csv")
 
+
